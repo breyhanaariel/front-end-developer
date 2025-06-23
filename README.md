@@ -1,6 +1,6 @@
 # 🎀 Hi, I'm Brianna Dickenson! 🎀
 
-🎨 **Front-End Developer** | 🌐 Remote-First | 💡 Passionate about clean UI & efficient code & responsive design
+🎨 **Front-End Developer** | 🌐 Remote-First | 💡 clean UI & efficient code & responsive design
 
 ---
 
@@ -20,9 +20,8 @@
 
 
 ### 📫 Connect with Me
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b)  
 📍 Based in Florida | 🕓 Available for full-time remote
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b) 
 
 ---
 
