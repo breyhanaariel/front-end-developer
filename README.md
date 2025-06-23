@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Brianna Dickenson!  
+# 🎀 Hi, I'm Brianna Dickenson! 🎀
 
 🎨 **Front-End Developer** | 🌐 Remote-First | 💡 Passionate about clean UI & efficient code  
 
