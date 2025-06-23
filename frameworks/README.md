@@ -4,7 +4,7 @@ This folder contains full-stack and UI-rich projects built with modern JavaScrip
 
 ---
 
-## 📦 Folder Overview
+## 📁 Folders
 
 ### 🔹 React
 - **portfolio-site/** – Personal site using React + Tailwind + Framer Motion. Live: [View Demo](https://your-portfolio.vercel.app)
