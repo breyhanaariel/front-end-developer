@@ -21,9 +21,10 @@
 
 ### 📫 Connect with Me
 📍 Based in Florida | 🕓 Available for full-time remote
+
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b) 
 
 ---
 
 ### ✨ Fun Fact  
->  I focus on making websites that look good, load fast, and are simple to use.
+I focus on making websites that look good, load fast, and are simple to use.
