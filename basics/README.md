@@ -35,7 +35,9 @@ These projects show:
 
 ---
 
-## 🚀 How to Run
+
+
+## 💻 How to Run
 
 You can clone this folder and open each project locally:
 
