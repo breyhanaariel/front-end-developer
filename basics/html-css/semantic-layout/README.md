@@ -6,12 +6,12 @@ This project is a fully semantic HTML5 layout for a fictional bakery called **Pa
 
 ## 📄 What's Included
 
-- `<header>` with logo and navigation
-- `<main>` content area with hero section, about, and features
-- `<article>` elements used for reusable cards or posts
-- `<aside>` for sidebar content
-- `<form>` for user contact
-- `<footer>` with links and info
+- ✅ `<header>` with logo and navigation  
+- ✅ `<main>` content area with hero section, about, and features  
+- ✅ `<article>` elements used for reusable cards or posts  
+- ✅ `<aside>` for sidebar content  
+- ✅ `<form>` for user contact  
+- ✅ `<footer>` with links and info
 
 ---
 
