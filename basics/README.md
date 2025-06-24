@@ -35,9 +35,13 @@ These projects show:
 
 ---
 
+## 🔗 Live Demos
 
+Where available, each project includes a live demo hosted on **Vercel** or **Netlify**. Links are also listed in each project's own README file.
 
-## 💻 How to Run
+---
+
+## 💻 How to Run Locally
 
 You can clone this folder and open each project locally:
 
