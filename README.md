@@ -1,7 +1,8 @@
 # 🎀 Hi, I'm Brianna Dickenson! 🎀
 
-🎨 **Front-End Developer** | 🌐 Remote | 
-💡 I focusnon clean UI & efficient code & responsive design
+🎨 **Front-End Developer** | 🌐 Remote 
+
+💡 I focus on clean UI & efficient code & responsive design
 
 ---
 
