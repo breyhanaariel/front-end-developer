@@ -58,7 +58,7 @@ Where available, each project includes a live demo hosted on **Vercel** or **Net
 
 ---
 
-## 🚀 How to Run Locally
+## 💻 How to Run Locally
 
 ```bash
 # Example for a React project
