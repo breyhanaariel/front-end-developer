@@ -9,16 +9,6 @@
 
 ---
 
-## 🎯 Skills Demonstrated
-
-- ✅ Real-time communication using **WebSockets (Socket.IO)**  
-- ✅ **Event-driven architecture** and real-time message broadcasting  
-- ✅ **Dynamic DOM rendering** for live chat updates  
-- ✅ Basic **state management** (chat history, online users, themes)  
-- ✅ Clean, component-friendly UI with **responsive layout**
-
----
-
 ## 🔧 Features Overview
 
 - 💬 Real-time messaging with no page reloads  
@@ -27,6 +17,16 @@
 - 🪄 Animated UI with personalized scroll aesthetics  
 - 📱 Fully responsive design (mobile-friendly)  
 - ❌ Fallbacks for disconnected users or server issues  
+
+---
+
+## 🎯 Skills Demonstrated
+
+- ✅ Real-time communication using **WebSockets (Socket.IO)**  
+- ✅ **Event-driven architecture** and real-time message broadcasting  
+- ✅ **Dynamic DOM rendering** for live chat updates  
+- ✅ Basic **state management** (chat history, online users, themes)  
+- ✅ Clean, component-friendly UI with **responsive layout**
 
 ---
 
