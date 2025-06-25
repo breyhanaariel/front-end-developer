@@ -1,8 +1,7 @@
 # 👗 Glamour Forecast 🔭  
 *API-Powered Beauty & Style App*
 
-**Glamour Forecast** is a front-end web application that integrates with real beauty, weather, and inspiration APIs.  
-Users can explore current **makeup trends**, receive **daily glamour advice** based on weather, and discover curated **beauty product recommendations** — all in a responsive interface.
+**Glamour Forecast** is a responsive front-end web application that integrates multiple third-party APIs to deliver personalized beauty content. Users can browse real-time makeup trends, receive daily weather-based beauty tips, and discover curated product recommendations — all through a dynamic and accessible UI.
 
 🔗 Live Demo [View Glamour Forecast on Vercel](https://your-vercel-link.vercel.app)
 
