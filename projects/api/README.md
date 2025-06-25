@@ -1,22 +1,37 @@
-## 👗 Glamour Forecast 🔭  
-*API Integration*
+# 👗 Glamour Forecast 🔭  
+*API-Powered Beauty & Style App*
 
- A fun, elegant front-end application that integrates with a (hypothetical) fashion and beauty API.  
-Users can explore current **makeup trends**, receive daily **"glamour ratings"** based on outfit inputs, and get curated **beauty product recommendations** — all in a sleek, dynamic interface.
+**Glamour Forecast** is a front-end web application that integrates with real beauty, weather, and inspiration APIs.  
+Users can explore current **makeup trends**, receive **daily glamour ratings** based on weather, and discover curated **beauty product recommendations** — all in a pastel-themed, responsive interface.
 
----
+💻 Live Demo [View Glamour Forecast on Vercel](https://your-vercel-link.vercel.app)
 
-### ✨ Skills Demonstrated
-
-- ✅ Third-Party API Integration using **Fetch** / **Axios**  
-- ✅ Asynchronous JavaScript (`async/await`)  
-- ✅ Robust **Error Handling** for network and data edge cases  
-- ✅ Clean **Data Parsing** and transformation  
-- ✅ **Dynamic UI Rendering** based on API responses  
-- ✅ Interactive **Search** and **Filtering** for trends & products  
+🗂 Tech Stack: **HTML5**, **CSS3**, **JavaScript (ES6+)**,Axios / Fetch API
 
 ---
 
-### 💻 Live Demo  
-🔗 [View on. vgf Vercel](https://your-vercel-link.vercel.app) *(Replace with your actual link)*
+## 🌐 APIs Used
 
+- 💄 [Makeup API](https://makeup-api.herokuapp.com/) – Real cosmetic product data by brand and category  
+- ☁️ [OpenWeatherMap API](https://openweathermap.org/api) – Used to generate weather-based "glamour ratings"  
+- 🖼 [Unsplash API](https://unsplash.com/developers) – Provides fashion/makeup inspiration images
+
+---
+
+## 🔧 Features Overview
+
+- 🛍️ Browse and filter real makeup products by type, brand, and price  
+- 🌦️ Weather-based beauty tips powered by OpenWeatherMap  
+- 🖼️ Trendy image gallery pulled from Unsplash's beauty + fashion feeds  
+- 📱 Fully responsive design with mobile-first UX  
+- 🧪 Built-in fallback handling when APIs return no results  
+
+---
+
+## 💻 How to Run Locally
+
+```bash
+git clone https://github.com/yourusername/glamour-forecast.git
+cd glamour-forecast
+npm install
+npm start
