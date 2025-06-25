@@ -1,7 +1,7 @@
 # 🌿 Aura & Ambiance Aromatherapy ☁️  
 *E-Commerce Front-End for Self-Care Retail*
 
-**Aura & Ambiance** is a modern e-commerce front-end application designed for a self-care brand specializing in bath bombs, candles, lotions, and aromatherapy essentials. Built with performance and polish in mind, the site mimics real-world retail logic while offering a soothing, elegant UI.
+**Aura & Ambiance** is a responsive e-commerce front-end built for a self-care brand. It demonstrates real-world retail functionality—product browsing, cart logic, and mock authentication—while emphasizing performance, clean UI design, and user-focused UX.
 
 🔗 Live Demo: [View Aura & Ambiance on Vercel](https://cosmic-cutie-dashboard.vercel.app)  
 
