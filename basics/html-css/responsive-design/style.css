@@ -1,0 +1,161 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #FAEDEE;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  background-color: #FAD7E8;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #F8BFD7;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #D6416C;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #6D3752;
+  margin-top: 0.5rem;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #D6416C;
+  font-weight: bold;
+  border: 2px solid #F8BFD7;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #FAEDEE;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #F8BFD7;
+  color: #fff;
+}
+
+/* Main */
+main {
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #F2E8CE;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #6D3752;
+  margin-bottom: 1rem;
+}
+
+article {
+  background-color: #F1DCC5;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 5px solid #F8BFD7;
+  border-radius: 8px;
+}
+
+article h3 {
+  color: #A14B5C;
+  margin-bottom: 0.5rem;
+}
+
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  font-style: italic;
+  color: #6D3752;
+  margin-top: 0.5rem;
+}
+
+/* Aside */
+aside {
+  background-color: #DCD8EA;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+aside h2,
+aside h3 {
+  color: #5A3C8C;
+}
+
+/* Footer */
+footer {
+  background-color: #F8BFD7;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  border-top: 4px solid #FAD7E8;
+}
+
+footer a {
+  color: #6D3752;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  nav ul {
+    gap: 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  section, aside {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
