@@ -1,7 +1,7 @@
 
 # 🧰 Front-End Basics Projects
 
-This folder features foundational front-end projects built with **HTML5**, **CSS3**, and **vanilla JavaScript**, showcasing core skills without relying on libraries or frameworks.
+This folder features foundational front-end projects built with **HTML5** **CSS3** and **vanilla JavaScript** to showcase core skills without relying on libraries or frameworks.
 ---
 
 ## 📁 Folders
