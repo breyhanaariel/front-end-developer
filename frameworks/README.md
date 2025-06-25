@@ -8,35 +8,35 @@ This folder includes full-stack, UI-rich projects using modern JavaScript framew
 
 ### 🔹 Angular
 - **dashboard-ui/** – Dashboard template with Angular Material and routing  
-Live: [View Demo](https://your-portfolio.vercel.app)
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)
 
 ### 🔹 Next.js
 - **auth-dashboard/** – Auth flow using NextAuth, role-based dashboard UI  
-Live: [View Demo](https://your-portfolio.vercel.app)  
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)  
 - **blog-app/** – Static/generated blog using Markdown, routing, and API routes  
-Live: [View Demo](https://your-portfolio.vercel.app)
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)
 
 ### 🔹 Nuxt.js
 - **nuxt-blog/** – Blog site with Nuxt SSR, layout slots, and dynamic routes  
-Live: [View Demo](https://your-portfolio.vercel.app)
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)
 
 ### 🔹 React
 - **portfolio-site/** – Personal site using React + Tailwind + Framer Motion  
-Live: [View Demo](https://your-portfolio.vercel.app)  
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)  
 - **redux-demo/** – Counter + posts app with Redux Toolkit and async thunks  
-Live: [View Demo](https://your-portfolio.vercel.app)  
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)  
 - **todo-app/** – CRUD to-do list with Zustand state management  
-Live: [View Demo](https://your-portfolio.vercel.app)
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)
 
 ### 🔹 Svelte
 - **svelte-crud-app/** – Small app built with Svelte showing reactivity and component structure  
-Live: [View Demo](https://your-portfolio.vercel.app)
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)
 
 ### 🔹 Vue
 - **simple-spa/** – Vue Router, basic components, and props  
-Live: [View Demo](https://your-portfolio.vercel.app)  
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)  
 - **vuex-todo/** – State-managed app using Vuex and localStorage  
-Live: [View Demo](https://your-portfolio.vercel.app)
+🔗 Live: [View Demo](https://your-portfolio.vercel.app)
 
 ---
 
