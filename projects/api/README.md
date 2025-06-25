@@ -9,14 +9,6 @@
 
 ---
 
-## 🌐 APIs Used
-
-- 💄 [Makeup API](https://makeup-api.herokuapp.com/) – Real cosmetic product data by brand and category  
-- ☁️ [OpenWeatherMap API](https://openweathermap.org/api) – Used to generate weather-based "glamour ratings"  
-- 🖼 [Unsplash API](https://unsplash.com/developers) – Provides fashion/makeup inspiration images
-
----
-
 ## 🔧 Features Overview
 
 - 🛍️ Browse and filter real makeup products by type, brand, and price  
@@ -26,6 +18,15 @@
 - 🧪 Built-in fallback handling when APIs return no results  
 
 ---
+
+## 🎯 Skills Demonstrated
+
+- 💄 [Makeup API](https://makeup-api.herokuapp.com/) – Real cosmetic product data by brand and category  
+- ☁️ [OpenWeatherMap API](https://openweathermap.org/api) – Used to generate weather-based "glamour ratings"  
+- 🖼 [Unsplash API](https://unsplash.com/developers) – Provides fashion/makeup inspiration images
+
+---
+
 
 ## 💻 How to Run Locally
 
