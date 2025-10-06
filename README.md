@@ -1,8 +1,8 @@
 # 🎀 Hi, I'm Brianna Dickenson! 🎀
 
-🎨 **Front-End Developer** | 🌐 Remote 
-
-💡 I focus on clean UI & efficient code & responsive design
+🎨 **Front-End Developer** |  🌐 Florida | 🕓 Available for Full-Time Remote
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b) 
+[![Gmail](https://img.shields.io/badge/Email%20Me-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
 
 ---
 
@@ -32,12 +32,30 @@
 ![TailwindCSS](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) 
 ![Material UI](https://img.shields.io/badge/-MaterialUI-0081CB?style=flat-square&logo=mui&logoColor=white)
 
+---
+
+### 🧩 My Work
+#### 🎨 **Design Systems & UI Kits**
+Reusable **Figma component libraries** built for scalability and brand consistency.  
+*Includes tokens, color systems, typography, and motion guidelines.*
+
+#### 🧭 **UX Case Studies**
+End-to-end **research and redesign projects** demonstrating measurable usability improvements.  
+*From problem definition to prototype testing.*
+
+#### 💡 **Interactive Prototypes**
+High-fidelity **motion studies, onboarding flows, and transitions** that bring interfaces to life.  
+*Built using Figma Smart Animate and Framer Motion.*
 
 ---
 
+### 📊 My Skills
+- 🧠 **User Research:** Interviews, surveys, affinity mapping, and journey maps  
+- 🪞 **Information Architecture:** Site maps, content hierarchy, and navigation flow  
+- 🎯 **Wireframing & Prototyping:** Lo-fi to hi-fi mockups  
+- 📱 **Responsive Design:** Mobile-first, accessibility-friendly layouts  
+- 🎨 **Visual Design:** Typography, color theory, layout systems, and brand design  
+- 🧩 **Design Systems:** Scalable component libraries and reusable UI patterns  
+- 🧪 **Usability Testing:** Remote and moderated testing with iterative refinement  
 
-### 📫 Connect with Me
-📍 Based in Florida | 🕓 Available for full-time remote
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b) 
-[![Gmail](https://img.shields.io/badge/Email%20Me-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
+---
