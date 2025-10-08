@@ -1,4 +1,4 @@
-# 🎀 Hi, I'm Brianna Dickenson! **Front-End Developer** 🎀
+# 🎀 Brianna Dickenson **Front-End Developer** 🎀
 
 🕓 Available for Full-Time Remote
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b) [![Gmail](https://img.shields.io/badge/Email%20Me-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
