@@ -1,3 +1,5 @@
+//(Mock wrappers hitting Next API routes — swap out for real third-party endpoints later)
+
 export type WeatherData = {
   location: string
   tempC: number
