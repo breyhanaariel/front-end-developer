@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p1",
+    "name": "Glow Dew Serum",
+    "price": 28.0,
+    "image": "/favicon.ico",
+    "category": "serum",
+    "description": "Lightweight serum for dewy finish."
+  },
+  {
+    "id": "p2",
+    "name": "Matte Miracle Primer",
+    "price": 22.0,
+    "image": "/favicon.ico",
+    "category": "primer",
+    "description": "Smooths pores and helps makeup last."
+  },
+  {
+    "id": "p3",
+    "name": "Velvet Blush Compact",
+    "price": 18.0,
+    "image": "/favicon.ico",
+    "category": "blush",
+    "description": "Soft, blendable blush for a natural flush."
+  }
+]
