@@ -1,3 +1,5 @@
+// (Mock weather API — returns deterministic sample)
+
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type WeatherResponse = {
