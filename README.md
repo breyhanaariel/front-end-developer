@@ -1,4 +1,5 @@
-# 🎀 Brianna Dickenson🎀 **Front-End Developer**
+# 🎀 Brianna Dickenson🎀 
+**Front-End Developer**
 
 🕓 Available for Full-Time Remote
 
