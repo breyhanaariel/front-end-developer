@@ -1,3 +1,5 @@
+// (Zustand store for preferences & cached API data)
+
 import create from 'zustand'
 
 type WeatherState = {
