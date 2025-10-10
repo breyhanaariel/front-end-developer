@@ -36,9 +36,9 @@
 
 A responsive front-end web application that integrates multiple third-party APIs to deliver personalized beauty content. Users can browse real-time makeup trends, receive daily weather-based beauty tips, and discover curated product recommendations — all through a dynamic and accessible UI.
 
-🔗 Live Demo [View Glamour Forecast on Vercel](https://your-vercel-link.vercel.app)
+🔗 [Live Demo](https://your-vercel-link.vercel.app)
 
-💻 GitHub Repo: [View Project on GitHub](https://github.com/breyhanaariel/glamour-forecast)
+💻 [GitHub Repo](https://github.com/breyhanaariel/glamour-forecast)
 
 ✅ Skills: API Integration, Modular Architecture, Multi-Framework Interoperability, Responsive Design, Accessibility, Performance Optimization
 
@@ -49,9 +49,9 @@ A responsive front-end web application that integrates multiple third-party APIs
 
 A responsive front-end dashboard that visualizes real-time celestial data through interactive and animated charts. It showcases front-end skills in data visualization, user interaction, and responsive UI design, allowing users to explore moon phases, star constellations, planetary alignments, and zodiac compatibility.
 
-🔗 Live Demo: [View Cosmic Cutie on Vercel](https://your-vercel-link.vercel.app)  
+🔗 [Live Demo](https://your-vercel-link.vercel.app)  
 
-💻 GitHub Repo: [View Project on GitHub](https://github.com/breyhanaariel/cosmic-cutie)
+💻 [GitHub Repo] (https://github.com/breyhanaariel/cosmic-cutie)
 
 ✅ Skills: Complex State Management, Real-Time Visual Updates, Cross-Framework Component Design, Data-Driven UI Performance
 
@@ -62,9 +62,9 @@ A responsive front-end dashboard that visualizes real-time celestial data throug
 
 A responsive e-commerce front-end built for a self-care brand. It demonstrates real-world retail functionality—product browsing, cart logic, and mock authentication—while emphasizing performance, clean UI design, and user-focused UX.
 
-🔗 Live Demo: [View Cosmic Cutie on Vercel](https://your-vercel-link.vercel.app)  
+🔗 (https://your-vercel-link.vercel.app)  
 
-💻 GitHub Repo: [View Project on GitHub](https://github.com/breyhanaariel/aura-ambiance)
+💻 [GitHub Repo](https://github.com/breyhanaariel/aura-ambiance)
 
 ✅ Skills: Full Front-end Ecosystem Fluency, UI/UX Execution, Scalable Design Systems, Modular Component Architecture
 
