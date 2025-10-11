@@ -42,7 +42,7 @@ A responsive front-end web application that integrates multiple third-party APIs
 
 🔗 [Live Demo](https://your-vercel-link.vercel.app)
 
-💻 [GitHub Repo](https://github.com/breyhanaariel/glamour-forecast)
+💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/glamour-forecast)
 
 ✅ Skills: API Integration, Modular Architecture, Multi-Framework Interoperability, Responsive Design, Accessibility, Performance Optimization
 
@@ -55,7 +55,7 @@ A responsive front-end dashboard that visualizes real-time celestial data throug
 
 🔗 [Live Demo](https://your-vercel-link.vercel.app)  
 
-💻 [GitHub Repo] (https://github.com/breyhanaariel/cosmic-cutie)
+💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/cosmic-cutie)
 
 ✅ Skills: Complex State Management, Real-Time Visual Updates, Cross-Framework Component Design, Data-Driven UI Performance
 
@@ -66,9 +66,9 @@ A responsive front-end dashboard that visualizes real-time celestial data throug
 
 A responsive e-commerce front-end built for a self-care brand. It demonstrates real-world retail functionality—product browsing, cart logic, and mock authentication—while emphasizing performance, clean UI design, and user-focused UX.
 
-🔗 (https://your-vercel-link.vercel.app)  
+🔗 [Live Demon](https://your-vercel-link.vercel.app)  
 
-💻 [GitHub Repo](https://github.com/breyhanaariel/aura-ambiance)
+💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/aura-ambiance)
 
 ✅ Skills: Full Front-end Ecosystem Fluency, UI/UX Execution, Scalable Design Systems, Modular Component Architecture
 
