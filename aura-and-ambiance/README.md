@@ -37,7 +37,7 @@
 ## 💻 How to Run Locally
 
 ```bash
-git clone https://github.com/breyhanaariel/front-end-developer/aura-and-ambiance.git
+git clone https://github.com/breyhanaariel/front-end-developer/aura-ambiance.git
 cd cosmic-cutie-dashboard
 npm install
 npm run dev
