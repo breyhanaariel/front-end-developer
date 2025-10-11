@@ -5,7 +5,7 @@
 
 🔗 [Live Demo](https://your-vercel-link.vercel.app)
 
-💻 [GitHub Repo](https://github.com/breyhanaariel/glamour-forecast)
+💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/glamour-forecast)
 
 🚀 Tech Stack: 
 
