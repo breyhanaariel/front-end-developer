@@ -3,9 +3,9 @@
 
 **Glamour Forecast** is a responsive front-end web application that integrates multiple third-party APIs to deliver personalized beauty content. Users can browse real-time makeup trends, receive daily weather-based beauty tips, and discover curated product recommendations — all through a dynamic and accessible UI.
 
-🔗 Live Demo [View Glamour Forecast on Vercel](https://your-vercel-link.vercel.app)
+🔗 [Live Demo](https://your-vercel-link.vercel.app)
 
-💻 GitHub Repo: [View Project on GitHub](https://github.com/breyhanaariel/glamour-forecast)
+💻 [GitHub Repo](https://github.com/breyhanaariel/glamour-forecast)
 
 🚀 Tech Stack: 
 
@@ -35,7 +35,7 @@
 ## 💻 How to Run Locally
 
 ```bash
-git clone https://github.com/breyhanaariel/glamour-forecast.git
+git clone https://github.com/breyhanaariel/front-end-developer/glamour-forecast.git
 cd glamour-forecast
 npm install
 npm start
