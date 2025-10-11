@@ -3,9 +3,9 @@
 
 **Aura & Ambiance** is a responsive e-commerce front-end built for a self-care brand. It demonstrates real-world retail functionality—product browsing, cart logic, and mock authentication—while emphasizing performance, clean UI design, and user-focused UX.
 
-🔗 [Live Demo] (https://cosmic-cutie-dashboard.vercel.app)  
+🔗 [Live Demo](https://cosmic-cutie-dashboard.vercel.app)  
 
-💻 [GitHub Repo] (https://github.com/breyhanaariel/aura-ambiance)
+💻 [GitHub Repo](https://github.com/breyhanaariel/aura-ambiance)
 
 🚀 Tech Stack: 
 
