@@ -36,7 +36,7 @@
 ## 💻 How to Run Locally
 
 ```bash
-git clone https://github.com/yourusername/cosmic-cutie.git
+git clone https://github.com/breyhanaariel/front-end-developer/cosmic-cutie.git
 cd cosmic-cutie
 npm install
 npm run dev
