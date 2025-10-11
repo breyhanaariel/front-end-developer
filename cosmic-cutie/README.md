@@ -3,8 +3,8 @@
 
 **Cosmic Cutie** is a responsive front-end dashboard that visualizes real-time celestial data through interactive and animated charts. It showcases front-end skills in data visualization, user interaction, and responsive UI design, allowing users to explore moon phases, star constellations, planetary alignments, and zodiac compatibility.
 
-🔗 Live Demo: [View Cosmic Cutie on Vercel](https://your-vercel-link.vercel.app)  
-💻 GitHub Repo: [View Project on GitHub](https://github.com/breyhanaariel/cosmic-cutie)
+🔗 [Live Demo](https://your-vercel-link.vercel.app)  
+💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/cosmic-cutie)
 
 🚀 Tech Stack: 
 
@@ -36,7 +36,7 @@
 ## 💻 How to Run Locally
 
 ```bash
-git clone https://github.com/yourusername/cosmic-cutie.git
+git clone https://github.com/breyhanaariel/front-end-developer/cosmic-cutie.git
 cd cosmic-cutie
 npm install
 npm run dev
