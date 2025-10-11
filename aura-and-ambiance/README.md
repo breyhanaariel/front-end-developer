@@ -8,6 +8,7 @@
 💻 [GitHub Repo] (https://github.com/breyhanaariel/aura-ambiance)
 
 🚀 Tech Stack: 
+
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-42B883?logo=vue.js&logoColor=white) ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00DC82?logo=nuxt.js&logoColor=white) ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=white) ![Redux](https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-443E38?logo=react&logoColor=white) ![Vuex](https://img.shields.io/badge/Vuex-35495E?logo=vue.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white) ![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?logo=mui&logoColor=white)
 
 ---
