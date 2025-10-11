@@ -5,7 +5,7 @@
 
 🔗 [Live Demo](https://cosmic-cutie-dashboard.vercel.app)  
 
-💻 [GitHub Repo](https://github.com/breyhanaariel/aura-ambiance)
+💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/aura-ambiance)
 
 🚀 Tech Stack: 
 
