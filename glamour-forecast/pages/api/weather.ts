@@ -1,34 +1,70 @@
-// (Mock weather API — returns deterministic sample)
-
 import type { NextApiRequest, NextApiResponse } from 'next'
+import type { WeatherData } from '../../types'
 
-type WeatherResponse = {
-  location: string
-  tempC: number
-  condition: string
-  tip: string
+type WeatherApiResponse = {
+  location: {
+    name: string
+    region: string
+    country: string
+  }
+  current: {
+    temp_c: number
+    feelslike_c: number
+    humidity: number
+    uv: number
+    wind_kph: number
+    condition: {
+      text: string
+      icon: string
+    }
+  }
 }
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<WeatherResponse>) {
-  const { location = 'Orlando' } = req.query
-  // simple deterministic logic based on hour
-  const hour = new Date().getHours()
-  let condition = 'Clear'
-  if (hour < 6 || hour > 18) condition = 'Cool Night'
-  else if (hour >= 12 && hour <= 15) condition = 'Sunny'
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<WeatherData | { error: string }>
+) {
+  const key = process.env.WEATHERAPI_KEY
+  if (!key) {
+    return res.status(500).json({ error: 'WEATHERAPI_KEY is not configured.' })
+  }
 
-  const tempC = 24 + ((hour % 6) - 3) // sample variation
-  const tip =
-    condition === 'Sunny'
-      ? 'Light SPF foundation + mattifying primer recommended.'
-      : condition === 'Cool Night'
-      ? 'Hydrating serum and a dewy primer for evening glow.'
-      : 'Everyday tinted moisturizer and light blush for balance.'
+  const location = String(req.query.location || 'Orlando').trim().slice(0, 80)
 
-  res.status(200).json({
-    location: String(location),
-    tempC,
-    condition,
-    tip
-  })
+  try {
+    const response = await fetch(
+      'https://api.weatherapi.com/v1/current.json?key=' +
+        encodeURIComponent(key) +
+        '&q=' +
+        encodeURIComponent(location) +
+        '&aqi=no'
+    )
+
+    const body = await response.json()
+
+    if (!response.ok) {
+      return res.status(response.status).json({
+        error: body?.error?.message || 'Unable to load weather data.'
+      })
+    }
+
+    const data = body as WeatherApiResponse
+
+    return res.status(200).json({
+      location: data.location.name,
+      region: data.location.region,
+      country: data.location.country,
+      tempC: data.current.temp_c,
+      feelsLikeC: data.current.feelslike_c,
+      humidity: data.current.humidity,
+      uv: data.current.uv,
+      windKph: data.current.wind_kph,
+      condition: data.current.condition.text,
+      icon: data.current.condition.icon.startsWith('//')
+        ? 'https:' + data.current.condition.icon
+        : data.current.condition.icon
+    })
+  } catch {
+    return res.status(502).json({ error: 'Weather service is temporarily unavailable.' })
+  }
 }
