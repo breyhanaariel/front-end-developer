@@ -1,0 +1,49 @@
+name: Portfolio CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality:
+    name: ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - aura-ambiance
+          - cosmic-cutie
+          - glamour-forecast
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: ${{ matrix.project }}
+        run: npm install
+
+      - name: Lint
+        working-directory: ${{ matrix.project }}
+        run: npm run lint
+
+      - name: Type check
+        working-directory: ${{ matrix.project }}
+        run: npm run typecheck
+
+      - name: Test
+        working-directory: ${{ matrix.project }}
+        run: npm test
+
+      - name: Build
+        working-directory: ${{ matrix.project }}
+        env:
+          WEATHERAPI_KEY: ci-placeholder
+        run: npm run build
