@@ -1,26 +1,41 @@
-// (Zustand store for preferences & cached API data)
+import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
+import type { Product, WeatherData } from '../types'
 
-import create from 'zustand'
-
-type WeatherState = {
+type GlamourState = {
   location: string
-  weather?: {
-    location: string
-    tempC: number
-    condition: string
-    tip: string
-  } | null
-  products: any[] | null
-  setLocation: (loc: string) => void
-  setWeather: (w: any) => void
-  setProducts: (p: any[]) => void
+  weather: WeatherData | null
+  products: Product[]
+  favoriteIds: string[]
+  setLocation: (location: string) => void
+  setWeather: (weather: WeatherData | null) => void
+  setProducts: (products: Product[]) => void
+  toggleFavorite: (id: string) => void
 }
 
-export const useStore = create<WeatherState>((set) => ({
-  location: 'Orlando',
-  weather: null,
-  products: null,
-  setLocation: (loc) => set({ location: loc }),
-  setWeather: (w) => set({ weather: w }),
-  setProducts: (p) => set({ products: p })
-}))
+export const useStore = create<GlamourState>()(
+  persist(
+    (set) => ({
+      location: 'Orlando',
+      weather: null,
+      products: [],
+      favoriteIds: [],
+      setLocation: (location) => set({ location }),
+      setWeather: (weather) => set({ weather }),
+      setProducts: (products) => set({ products }),
+      toggleFavorite: (id) =>
+        set((state) => ({
+          favoriteIds: state.favoriteIds.includes(id)
+            ? state.favoriteIds.filter((favoriteId) => favoriteId !== id)
+            : [...state.favoriteIds, id]
+        }))
+    }),
+    {
+      name: 'glamour-forecast-preferences',
+      partialize: (state) => ({
+        location: state.location,
+        favoriteIds: state.favoriteIds
+      })
+    }
+  )
+)
