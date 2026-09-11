@@ -1,76 +1,117 @@
-# 🎀 Brianna Dickenson🎀 
+# 🎀 Brianna Dickenson
 
-### **Front-End Developer**
+## Front-End Developer | React · Next.js · TypeScript
 
-🕓 Available for Full-Time Remote
+I build responsive, accessible front-end experiences with a focus on polished UI, clear state management, API-driven features, and maintainable component architecture.
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b) [![Gmail](https://img.shields.io/badge/Email%20Me-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
+**Open to full-time remote front-end roles and short-term freelance projects.**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
+
+---
+
+## Core Stack
+
+**Languages & Web:** HTML5 · CSS3 · JavaScript · TypeScript  
+**Front End:** React · Next.js · Tailwind CSS  
+**State:** Redux Toolkit · Zustand  
+**Data & UI:** REST APIs · Chart.js · responsive design · accessibility · form validation  
+**Quality:** ESLint · TypeScript type checking · Vitest · GitHub Actions
 
 ---
 
-### My Knowledge
+## Showcase Projects
 
-🧰 Core Technologies  
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) 
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) 
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)  
+This repository is intentionally structured as a **single front-end showcase**. Each folder is an independent Next.js application and demonstrates a different type of front-end problem.
 
-⚛️ Frameworks & Libraries  
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black) 
-![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white) 
-![Vue.js](https://img.shields.io/badge/-Vue.js-42B883?style=flat-square&logo=vue.js&logoColor=white) 
-![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00DC82?style=flat-square&logo=nuxt.js&logoColor=white) 
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white) 
-![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)  
+### 🌿 Aura & Ambiance — E-Commerce Storefront
 
-📦 State Management  
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white) 
-![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square&logo=zustand&logoColor=white) 
-![Vuex](https://img.shields.io/badge/Vuex-4FC08D?style=flat-square&logo=vue.js&logoColor=white)  
+A self-care retail experience focused on the complete buyer journey: product discovery, persistent cart state, quantity management, product details, and a validated simulated checkout.
 
-🎨 Styling & UI Libraries  
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white) 
-![TailwindCSS](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) 
-![Material UI](https://img.shields.io/badge/-MaterialUI-0081CB?style=flat-square&logo=mui&logoColor=white)
+**Demonstrates:** commercial UI/UX, Zustand persistence, search/filter/sort, form validation, responsive shopping flows.
+
+**Stack:** Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest
+
+[Source](./aura-ambiance) · **Live demo:** deployment pending
 
 ---
-### 🧩 My Work
-#### **Glamour Forecast — API-Powered Beauty & Lifestyle App**
 
-A responsive front-end web application that integrates multiple third-party APIs to deliver personalized beauty content. Users can browse real-time makeup trends, receive daily weather-based beauty tips, and discover curated product recommendations — all through a dynamic and accessible UI.
+### 🪐 Cosmic Cutie — Lunar Data Dashboard
 
-🔗 [Live Demo](https://your-vercel-link.vercel.app)
+An interactive astronomy dashboard backed by WeatherAPI. Users can search a location and explore real moon-phase, illumination, moonrise/moonset, and sunrise/sunset data over 7- or 14-day ranges.
 
-💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/glamour-forecast)
+**Demonstrates:** asynchronous Redux state, external API integration, data transformation, Chart.js visualization, loading/error states, responsive dashboard design.
 
-✅ Skills: API Integration, Modular Architecture, Multi-Framework Interoperability, Responsive Design, Accessibility, Performance Optimization
+**Stack:** Next.js · React · TypeScript · Redux Toolkit · Chart.js · Tailwind CSS · Vitest
 
-🚀 Tech Stack: ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)  ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)  ![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square&logo=zustand&logoColor=white)  ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-42B883?style=flat-square&logo=vue.js&logoColor=white) ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00DC82?style=flat-square&logo=nuxt.js&logoColor=white)  ![Material UI](https://img.shields.io/badge/Material_UI-0081CB?style=flat-square&logo=mui&logoColor=white)  ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+[Source](./cosmic-cutie) · **Live demo:** deployment pending
 
+---
 
-#### **Cosmic Cutie — Interactive Data Visualization Dashboard**
+### 💄 Glamour Forecast — Weather-Powered Beauty Discovery
 
-A responsive front-end dashboard that visualizes real-time celestial data through interactive and animated charts. It showcases front-end skills in data visualization, user interaction, and responsive UI design, allowing users to explore moon phases, star constellations, planetary alignments, and zodiac compatibility.
+A beauty discovery interface that combines current WeatherAPI conditions with rule-based beauty guidance and live beauty/skin-care product data from DummyJSON. Users can search and filter products and persist favorites locally.
 
-🔗 [Live Demo](https://your-vercel-link.vercel.app)  
+**Demonstrates:** multi-API integration, server-side API proxying, Zustand persistence, personalization logic, filtering, error handling, responsive UI.
 
-💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/cosmic-cutie)
+**Stack:** Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest
 
-✅ Skills: Complex State Management, Real-Time Visual Updates, Cross-Framework Component Design, Data-Driven UI Performance
+[Source](./glamour-forecast) · **Live demo:** deployment pending
 
-🚀 Tech Stack: ![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) ![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?logo=redux&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-42B883?logo=vue.js&logoColor=white) ![Vuex](https://img.shields.io/badge/Vuex-35495E?logo=vue.js&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white) ![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?logo=mui&logoColor=white)
+---
 
+## Repository Structure
 
-#### **Aura & Ambiance — Self-Care E-Commerce Experience**
+```text
+front-end-developer/
+├── aura-ambiance/       # E-commerce / commercial UX case study
+├── cosmic-cutie/        # Data visualization / Redux case study
+├── glamour-forecast/    # API integration / personalization case study
+└── .github/workflows/   # CI for all showcase applications
+```
 
-A responsive e-commerce front-end built for a self-care brand. It demonstrates real-world retail functionality—product browsing, cart logic, and mock authentication—while emphasizing performance, clean UI design, and user-focused UX.
+Each application has its own `package.json`, README, test suite, and deployment configuration so it can be deployed independently from this showcase repository.
 
-🔗 [Live Demon](https://your-vercel-link.vercel.app)  
+---
 
-💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/aura-ambiance)
+## Running a Project Locally
 
-✅ Skills: Full Front-end Ecosystem Fluency, UI/UX Execution, Scalable Design Systems, Modular Component Architecture
+Clone the showcase once, then choose the application you want to run:
 
-🚀 Tech Stack: 
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-42B883?logo=vue.js&logoColor=white) ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00DC82?logo=nuxt.js&logoColor=white) ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=white) ![Redux](https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-443E38?logo=react&logoColor=white) ![Vuex](https://img.shields.io/badge/Vuex-35495E?logo=vue.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white) ![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?logo=mui&logoColor=white)
+```bash
+git clone https://github.com/breyhanaariel/front-end-developer.git
+cd front-end-developer/aura-ambiance
+npm install
+npm run dev
+```
+
+For **Cosmic Cutie** and **Glamour Forecast**, copy `.env.example` to `.env.local` and add a WeatherAPI key before starting the app.
+
+---
+
+## Quality Checks
+
+Every showcase project exposes the same quality commands:
+
+```bash
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+GitHub Actions runs these checks for all three project roots on pushes to `main` and on pull requests.
+
+---
+
+## Availability
+
+I am currently interested in:
+
+- Full-time remote front-end development roles
+- Short-term freelance front-end projects
+- Responsive website and web-app implementation
+- E-commerce UI, dashboards, and API-driven interfaces
+
+For work inquiries, use the email or LinkedIn links at the top of this README.
