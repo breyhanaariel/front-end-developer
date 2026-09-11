@@ -1,52 +1,56 @@
-// store/celestialSlice.ts
-// Slice to fetch and store the mocked celestial data.
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
+import type { AstronomyPayload } from '../types'
 
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-export type Point = {
-  timestamp: number;
-  moonPhase: number;
-  brightness: number;
+type FetchArgs = {
+  location: string
+  days: 7 | 14
 }
 
-export const fetchCelestial = createAsyncThunk("celestial/fetch", async () => {
-  const res = await fetch("/api/celestial");
-  if (!res.ok) throw new Error("Failed to fetch");
-  const data: Point[] = await res.json();
-  return data;
-});
+export const fetchAstronomy = createAsyncThunk<AstronomyPayload, FetchArgs>(
+  'celestial/fetchAstronomy',
+  async ({ location, days }) => {
+    const response = await fetch(
+      '/api/astronomy?location=' + encodeURIComponent(location) + '&days=' + days
+    )
+    const data = await response.json()
+    if (!response.ok) {
+      throw new Error(data.error || 'Failed to fetch astronomy data.')
+    }
+    return data as AstronomyPayload
+  }
+)
 
 type CelestialState = {
-  points: Point[] | null;
-  status: "idle" | "loading" | "succeeded" | "failed";
-  error?: string | null;
+  data: AstronomyPayload | null
+  status: 'idle' | 'loading' | 'succeeded' | 'failed'
+  error: string | null
 }
 
 const initialState: CelestialState = {
-  points: null,
-  status: "idle",
+  data: null,
+  status: 'idle',
   error: null
 }
 
 const slice = createSlice({
-  name: "celestial",
+  name: 'celestial',
   initialState,
-  reducers: {
-    clear: (state) => { state.points = null; state.status = "idle"; state.error = null }
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchCelestial.pending, (state) => { state.status = "loading"; })
-      .addCase(fetchCelestial.fulfilled, (state, action: PayloadAction<Point[]>) => {
-        state.status = "succeeded";
-        state.points = action.payload;
+      .addCase(fetchAstronomy.pending, (state) => {
+        state.status = 'loading'
+        state.error = null
       })
-      .addCase(fetchCelestial.rejected, (state, action) => {
-        state.status = "failed";
-        state.error = action.error.message ?? "Unknown error";
+      .addCase(fetchAstronomy.fulfilled, (state, action: PayloadAction<AstronomyPayload>) => {
+        state.status = 'succeeded'
+        state.data = action.payload
+      })
+      .addCase(fetchAstronomy.rejected, (state, action) => {
+        state.status = 'failed'
+        state.error = action.error.message || 'Unable to load astronomy data.'
       })
   }
-});
+})
 
-export const { clear } = slice.actions;
-export default slice.reducer;
+export default slice.reducer
