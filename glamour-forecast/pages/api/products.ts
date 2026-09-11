@@ -1,41 +1,52 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import type { Product } from '../../types'
 
-type Product = {
-  id: string
-  name: string
+type DummyProduct = {
+  id: number
+  title: string
   price: number
-  image?: string
+  thumbnail: string
+  category: string
+  brand?: string
+  rating?: number
+  description: string
   tags?: string[]
-  description?: string
 }
 
-const PRODUCTS: Product[] = [
-  {
-    id: 'p1',
-    name: 'Glow Dew Serum',
-    price: 28,
-    image: '/favicon.ico',
-    tags: ['hydrating', 'serum'],
-    description: 'A lightweight serum for instant dewy finish.'
-  },
-  {
-    id: 'p2',
-    name: 'Matte Miracle Primer',
-    price: 22,
-    image: '/favicon.ico',
-    tags: ['primer', 'mattifying'],
-    description: 'Smooths pores and extends makeup wear.'
-  },
-  {
-    id: 'p3',
-    name: 'Velvet Blush Compact',
-    price: 18,
-    image: '/favicon.ico',
-    tags: ['blush', 'compact'],
-    description: 'Soft, blendable blush for natural flush.'
-  }
-]
+type DummyResponse = {
+  products: DummyProduct[]
+}
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<Product[]>) {
-  res.status(200).json(PRODUCTS)
+export default async function handler(
+  _req: NextApiRequest,
+  res: NextApiResponse<Product[] | { error: string }>
+) {
+  try {
+    const categories = ['beauty', 'skin-care']
+    const responses = await Promise.all(
+      categories.map(async (category) => {
+        const response = await fetch('https://dummyjson.com/products/category/' + category)
+        if (!response.ok) throw new Error('Product service failed.')
+        return (await response.json()) as DummyResponse
+      })
+    )
+
+    const products = responses
+      .flatMap((response) => response.products)
+      .map((product) => ({
+        id: String(product.id),
+        name: product.title,
+        price: product.price,
+        image: product.thumbnail,
+        category: product.category,
+        brand: product.brand || 'Independent',
+        rating: product.rating || 0,
+        description: product.description,
+        tags: product.tags || []
+      }))
+
+    return res.status(200).json(products)
+  } catch {
+    return res.status(502).json({ error: 'Beauty product service is temporarily unavailable.' })
+  }
 }
