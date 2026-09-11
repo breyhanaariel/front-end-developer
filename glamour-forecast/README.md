@@ -1,41 +1,87 @@
-# 👗 Glamour Forecast 🔭  
-*API-Powered Beauty & Style App*
+# 💄 Glamour Forecast
 
-**Glamour Forecast** is a responsive front-end web application that integrates multiple third-party APIs to deliver personalized beauty content. Users can browse real-time makeup trends, receive daily weather-based beauty tips, and discover curated product recommendations — all through a dynamic and accessible UI.
+**Weather-Powered Beauty Discovery**
 
-🔗 [Live Demo](https://your-vercel-link.vercel.app)
+Glamour Forecast is an API-driven front-end application that combines current local weather with rule-based beauty guidance and an external beauty/skin-care product catalog.
 
-💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/glamour-forecast)
+## What It Does
 
-🚀 Tech Stack: 
+- Search current weather by city or postal code
+- Load live temperature, humidity, UV, wind, and condition data from WeatherAPI
+- Generate beauty-prep suggestions from weather conditions
+- Load beauty and skin-care products from DummyJSON
+- Search products by name, brand, or tags
+- Filter by product category
+- Save and remove favorite products
+- Persist location and favorites locally with Zustand
+- Present loading, empty, and API-error states
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)  ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)  ![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square&logo=zustand&logoColor=white)  ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-42B883?style=flat-square&logo=vue.js&logoColor=white) ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00DC82?style=flat-square&logo=nuxt.js&logoColor=white)  ![Material UI](https://img.shields.io/badge/Material_UI-0081CB?style=flat-square&logo=mui&logoColor=white)  ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+The app does **not** claim that product data is real-time retail inventory. DummyJSON is used as an external REST data source for the portfolio experience.
 
----
+## Tech Stack
 
-## 🔧 Features Overview
+- Next.js
+- React
+- TypeScript
+- Zustand + persistence middleware
+- Tailwind CSS
+- WeatherAPI
+- DummyJSON Products API
+- Vitest
+- ESLint
 
-- 🛍️ Browse and filter real makeup products by type, brand, and price  
-- 🌦️ Weather-based beauty tips powered by OpenWeatherMap  
-- 🖼️ Trendy image gallery pulled from Unsplash's beauty + fashion feeds  
-- 📱 Fully responsive design with mobile-first UX  
-- 🧪 Built-in fallback handling when APIs return no results  
+## Architecture
 
----
+External requests are proxied through Next.js API routes:
 
-## 🎯 Skills Demonstrated
+- `/api/weather` calls WeatherAPI using a server-side `WEATHERAPI_KEY`.
+- `/api/products` combines DummyJSON's `beauty` and `skin-care` categories and normalizes the response for the UI.
 
-- 💄 [Makeup API](https://makeup-api.herokuapp.com/) – Real cosmetic product data by brand and category  
-- ☁️ [OpenWeatherMap API](https://openweathermap.org/api) – Used to generate weather-based "glamour ratings"  
-- 🖼 [Unsplash API](https://unsplash.com/developers) – Provides fashion/makeup inspiration images
+A small recommendation module converts weather measurements into transparent, testable beauty guidance rather than hiding the logic inside a component.
 
----
+## Run Locally
 
-
-## 💻 How to Run Locally
+From the showcase repository root:
 
 ```bash
-git clone https://github.com/breyhanaariel/front-end-developer/glamour-forecast.git
 cd glamour-forecast
+cp .env.example .env.local
 npm install
-npm start
+npm run dev
+```
+
+Add your WeatherAPI key:
+
+```env
+WEATHERAPI_KEY=your_key_here
+```
+
+Open `http://localhost:3000`.
+
+## Quality Checks
+
+```bash
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+## Deploy to Vercel
+
+1. Import `breyhanaariel/front-end-developer` into Vercel.
+2. Set **Root Directory** to `glamour-forecast`.
+3. Keep the detected framework as **Next.js**.
+4. Add `WEATHERAPI_KEY` in Vercel Environment Variables.
+5. Deploy.
+
+**Live demo:** deployment pending.
+
+## Data Sources
+
+- [WeatherAPI](https://www.weatherapi.com/docs/)
+- [DummyJSON Products](https://dummyjson.com/docs/products)
+
+## Source
+
+[View Glamour Forecast in the showcase repository](https://github.com/breyhanaariel/front-end-developer/tree/main/glamour-forecast)
