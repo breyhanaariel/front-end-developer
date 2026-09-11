@@ -1,24 +1,31 @@
 {
   "name": "aura-and-ambiance",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start -p 3000",
-    "lint": "next lint --fix"
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
-    "next": "14.2.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "zustand": "^4.4.0",
-    "@mui/material": "^5.14.9"
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.4.8",
-    "typescript": "^5.4.2"
+    "@types/node": "^20.16.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   }
 }
