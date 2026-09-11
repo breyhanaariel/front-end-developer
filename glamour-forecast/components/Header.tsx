@@ -1,14 +1,11 @@
-import React from 'react'
-
 export default function Header() {
   return (
-    <header className="w-full py-6 px-4 md:px-8 border-b">
-      <div className="max-w-5xl mx-auto flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">Glamour Forecast</h1>
-        <nav>
-          <a className="mr-4 text-slate-600 hover:underline" href="#weather">Weather</a>
-          <a className="mr-4 text-slate-600 hover:underline" href="#products">Products</a>
-          <a className="text-slate-600 hover:underline" href="#tips">Beauty Tips</a>
+    <header className="sticky top-0 z-20 border-b border-pink-100 bg-white/95 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
+        <a href="/" className="text-xl font-semibold text-pink-600">Glamour Forecast</a>
+        <nav aria-label="Primary navigation" className="flex gap-4 text-sm text-slate-600">
+          <a className="hover:text-pink-600" href="#weather">Forecast</a>
+          <a className="hover:text-pink-600" href="#products">Products</a>
         </nav>
       </div>
     </header>
