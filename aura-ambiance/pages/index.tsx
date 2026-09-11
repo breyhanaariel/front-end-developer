@@ -1,74 +1,124 @@
-// pages/index.tsx
-import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
+import { useEffect, useMemo, useState } from 'react'
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import ProductCard from '../src/components/ProductCard'
-import VueFilterLoader from '../src/components/VueFilterLoader'
-import CartWidgetLoader from '../src/components/CartWidgetLoader'
-
-type Product = {
-  id: string; name: string; price: number; image?: string; category?: string; description?: string;
-}
+import ShopControls from '../src/components/ShopControls'
+import { filterAndSortProducts } from '../src/lib/catalog'
+import type { Product, SortOption } from '../src/types'
 
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([])
-  const [filtered, setFiltered] = useState<Product[]>([])
-  const [category, setCategory] = useState<string>('all')
+  const [query, setQuery] = useState('')
+  const [category, setCategory] = useState('all')
+  const [sort, setSort] = useState<SortOption>('featured')
+  const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading')
 
   useEffect(() => {
-    fetch('/api/products').then(r => r.json()).then((p: Product[]) => { setProducts(p); setFiltered(p) })
+    fetch('/api/products')
+      .then((response) => {
+        if (!response.ok) throw new Error('Unable to load products')
+        return response.json()
+      })
+      .then((data: Product[]) => {
+        setProducts(data)
+        setStatus('ready')
+      })
+      .catch(() => setStatus('error'))
   }, [])
 
-  useEffect(() => {
-    function onFilter(e: CustomEvent) {
-      const cat = e.detail?.category ?? 'all'
-      setCategory(cat)
-      setFiltered(cat === 'all' ? products : products.filter(x => x.category === cat))
-    }
-    window.addEventListener('aura-filter', onFilter as EventListener)
-    return () => window.removeEventListener('aura-filter', onFilter as EventListener)
-  }, [products])
+  const categories = useMemo(
+    () => Array.from(new Set(products.map((product) => product.category))).sort(),
+    [products]
+  )
+
+  const visibleProducts = useMemo(
+    () => filterAndSortProducts(products, query, category, sort),
+    [products, query, category, sort]
+  )
 
   return (
     <>
       <Head>
-        <title>Aura & Ambiance — Demo Storefront</title>
-        <meta name="description" content="Portfolio showcase storefront built with Next.js + TypeScript + Tailwind" />
+        <title>Aura &amp; Ambiance | Self-Care Storefront</title>
+        <meta
+          name="description"
+          content="A polished self-care storefront prototype with product discovery, persistent cart state, and simulated checkout."
+        />
       </Head>
-
       <Header />
-      <main className="min-h-[70vh] py-10">
-        <div className="max-w-6xl mx-auto px-4 space-y-6">
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-            <div className="md:col-span-2">
-              <h2 className="text-2xl font-semibold">Featured Products</h2>
-              <p className="text-slate-600 mt-1">Responsive UI, accessible markup, and modular components.</p>
 
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {filtered.map(p => <ProductCard key={p.id} product={p} />)}
-              </div>
+      <main>
+        <section className="bg-gradient-to-br from-rose-50 via-white to-indigo-50 py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-aura-500">Soft rituals, thoughtful UX</p>
+              <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl">
+                Self-care shopping without the clutter.
+              </h1>
+              <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600">
+                Browse a curated collection, find the right scent, save your cart between visits, and complete a polished checkout flow.
+              </p>
+              <a
+                href="#shop"
+                className="mt-7 inline-flex rounded-full bg-aura-500 px-6 py-3 font-semibold text-white shadow-sm hover:opacity-90"
+              >
+                Shop the collection
+              </a>
             </div>
+            <div className="rounded-[2rem] border border-rose-100 bg-white/70 p-7 shadow-xl">
+              <p className="text-sm font-semibold text-aura-500">Portfolio case study</p>
+              <h2 className="mt-2 text-2xl font-semibold">Built for a real retail journey</h2>
+              <ul className="mt-5 space-y-3 text-sm text-slate-600">
+                <li>Persistent Zustand cart state</li>
+                <li>Search, category filters, and sorting</li>
+                <li>Product detail and quantity management</li>
+                <li>Accessible checkout form with validation</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-            <aside>
-              <div className="card mb-4">
-                <h3 className="font-semibold mb-2">Shop Filters</h3>
-                <VueFilterLoader />
-              </div>
+        <section id="shop" className="mx-auto max-w-6xl px-4 py-16">
+          <div className="mb-7">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-aura-500">Collection</p>
+            <h2 className="mt-2 text-3xl font-semibold">Find your next ritual</h2>
+          </div>
 
-              <div className="card">
-                <h3 className="font-semibold mb-2">Cart</h3>
-                <CartWidgetLoader />
-                <p className="mt-2 text-sm text-slate-600">Micro-widget demonstrates Svelte-like micro-interactions.</p>
-              </div>
-            </aside>
-          </section>
+          <ShopControls
+            query={query}
+            onQueryChange={setQuery}
+            category={category}
+            onCategoryChange={setCategory}
+            sort={sort}
+            onSortChange={setSort}
+            categories={categories}
+          />
 
-          <section className="card">
-            <h3 className="font-semibold mb-2">About this Project</h3>
-            <p className="text-sm text-slate-600">A portfolio-ready storefront demonstrating Next.js + TypeScript + Tailwind. It includes tiny cross-framework widgets (Vue-like and Svelte-like) built as web components to show your ability to integrate mixed tech without heavy builds.</p>
-          </section>
-        </div>
+          {status === 'loading' && <p className="py-10 text-slate-600">Loading collection…</p>}
+          {status === 'error' && (
+            <p role="alert" className="py-10 text-rose-700">The collection could not be loaded. Please refresh and try again.</p>
+          )}
+          {status === 'ready' && (
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {visibleProducts.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          )}
+          {status === 'ready' && visibleProducts.length === 0 && (
+            <p className="py-10 text-slate-600">No products match those filters.</p>
+          )}
+        </section>
+
+        <section id="about" className="border-y border-rose-100 bg-rose-50/50 py-14">
+          <div className="mx-auto max-w-4xl px-4 text-center">
+            <h2 className="text-2xl font-semibold">Designed as a commercial front-end case study</h2>
+            <p className="mt-4 leading-7 text-slate-600">
+              Aura &amp; Ambiance focuses on the interactions a retail client cares about: discovery, product confidence, cart continuity, and a clear checkout path.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />
