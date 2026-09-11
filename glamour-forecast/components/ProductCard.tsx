@@ -1,25 +1,36 @@
-import React from 'react'
+import type { Product } from '../types'
+import { useStore } from '../store/useStore'
 
-type Product = {
-  id: string
-  name: string
-  price: number
-  description?: string
-  image?: string
-  tags?: string[]
-}
+export default function ProductCard({ product }: { product: Product }) {
+  const favoriteIds = useStore((state) => state.favoriteIds)
+  const toggleFavorite = useStore((state) => state.toggleFavorite)
+  const isFavorite = favoriteIds.includes(product.id)
 
-export default function ProductCard({ p }: { p: Product }) {
   return (
-    <article className="card flex flex-col md:flex-row gap-4 items-center">
-      <img src={p.image ?? '/favicon.ico'} alt={p.name} className="w-24 h-24 object-cover rounded" />
-      <div className="flex-1">
-        <h3 className="font-semibold">{p.name}</h3>
-        <p className="text-sm text-slate-600 mt-1">{p.description}</p>
-        <div className="mt-2 flex items-center justify-between">
-          <div className="text-pink-600 font-semibold">${p.price.toFixed(2)}</div>
-          <button className="px-3 py-1 rounded bg-pink-500 text-white text-sm">Add to Favorites</button>
+    <article className="overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <div className="relative bg-pink-50">
+        <img src={product.image} alt="" className="h-52 w-full object-contain p-4" loading="lazy" />
+        <button
+          type="button"
+          onClick={() => toggleFavorite(product.id)}
+          aria-pressed={isFavorite}
+          aria-label={(isFavorite ? 'Remove ' : 'Save ') + product.name + (isFavorite ? ' from favorites' : ' to favorites')}
+          className="absolute right-3 top-3 rounded-full bg-white/95 px-3 py-2 text-sm font-semibold text-pink-600 shadow"
+        >
+          {isFavorite ? '♥ Saved' : '♡ Save'}
+        </button>
+      </div>
+      <div className="p-5">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-pink-500">{product.category}</p>
+            <h3 className="mt-1 font-semibold">{product.name}</h3>
+            <p className="mt-1 text-xs text-slate-500">{product.brand}</p>
+          </div>
+          <strong>{'$'}{product.price.toFixed(2)}</strong>
         </div>
+        <p className="mt-3 text-sm leading-6 text-slate-600">{product.description}</p>
+        <p className="mt-3 text-xs font-medium text-amber-700">★ {product.rating.toFixed(1)}</p>
       </div>
     </article>
   )
