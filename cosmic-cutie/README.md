@@ -1,42 +1,81 @@
-# 🪐 Cosmic Cutie 🪐
-*Interactive Data Visualization Dashboard*
+# 🪐 Cosmic Cutie
 
-**Cosmic Cutie** is a responsive front-end dashboard that visualizes real-time celestial data through interactive and animated charts. It showcases front-end skills in data visualization, user interaction, and responsive UI design, allowing users to explore moon phases, star constellations, planetary alignments, and zodiac compatibility.
+**Interactive Lunar Data Dashboard**
 
-🔗 [Live Demo](https://your-vercel-link.vercel.app)  
-💻 [GitHub Repo](https://github.com/breyhanaariel/front-end-developer/cosmic-cutie)
+Cosmic Cutie is a responsive astronomy dashboard that turns real WeatherAPI astronomy data into an approachable, visual front-end experience.
 
-🚀 Tech Stack: 
+## What It Does
 
-![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) ![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?logo=redux&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-42B883?logo=vue.js&logoColor=white) ![Vuex](https://img.shields.io/badge/Vuex-35495E?logo=vue.js&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white) ![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?logo=mui&logoColor=white)
+- Search astronomy data by city, postal code, or supported WeatherAPI location query
+- Load real moon phase and moon illumination data
+- Display moonrise, moonset, sunrise, and sunset
+- Switch between 7-day and 14-day ranges
+- Visualize moon illumination with Chart.js
+- Show a daily lunar calendar
+- Handle loading and API error states through Redux Toolkit
 
----
+WeatherAPI's astronomy endpoint supplies the moon and sun data. The WeatherAPI key stays server-side inside the Next.js API route.
 
-## 🔧 Features Overview
+## Tech Stack
 
-- 🌙 Real-time **moon phase tracker**
-- 🌌 Interactive **constellation viewer**
-- 🪐 Visual planetary alignment timeline
-- ♓ Live **zodiac compatibility checker**
-- 📱 Fully responsive design for desktop and mobile
-- 🎨 Smooth animations and intuitive chart transitions
+- Next.js
+- React
+- TypeScript
+- Redux Toolkit
+- React Redux
+- Chart.js + react-chartjs-2
+- Tailwind CSS
+- Vitest
+- ESLint
 
----
+## Architecture
 
-## 🎯 Skills Demonstrated
+The browser dispatches a typed Redux async thunk to the local `/api/astronomy` route. The Next.js API route reads `WEATHERAPI_KEY` server-side, requests astronomy data from WeatherAPI, normalizes the response, and returns only the fields needed by the dashboard.
 
-- ✅ Data visualization with **D3.js** and **Chart.js**
-- ✅ Third-party **API integration**
-- ✅ **State management** for reactive chart updates
-- ✅ Custom **chart interactions** and tooltips
-- ✅ **Responsive layout** using CSS Grid/Flexbox
+This keeps API credentials out of client-side code while giving the UI predictable typed data.
 
----
+## Run Locally
 
-## 💻 How to Run Locally
+From the showcase repository root:
 
 ```bash
-git clone https://github.com/breyhanaariel/front-end-developer/cosmic-cutie.git
 cd cosmic-cutie
+cp .env.example .env.local
 npm install
 npm run dev
+```
+
+Add your WeatherAPI key to `.env.local`:
+
+```env
+WEATHERAPI_KEY=your_key_here
+```
+
+Open `http://localhost:3000`.
+
+## Quality Checks
+
+```bash
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+## Deploy to Vercel
+
+1. Import `breyhanaariel/front-end-developer` into Vercel.
+2. Set **Root Directory** to `cosmic-cutie`.
+3. Keep the detected framework as **Next.js**.
+4. Add `WEATHERAPI_KEY` in Vercel Environment Variables.
+5. Deploy.
+
+**Live demo:** deployment pending.
+
+## Data Source
+
+[WeatherAPI Astronomy API](https://www.weatherapi.com/docs/)
+
+## Source
+
+[View Cosmic Cutie in the showcase repository](https://github.com/breyhanaariel/front-end-developer/tree/main/cosmic-cutie)
