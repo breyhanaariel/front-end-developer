@@ -1,26 +1,10 @@
 [
-  {
-    "id": "p1",
-    "name": "Glow Dew Serum",
-    "price": 28.0,
-    "image": "/favicon.ico",
-    "category": "serum",
-    "description": "Lightweight serum for dewy finish."
-  },
-  {
-    "id": "p2",
-    "name": "Matte Miracle Primer",
-    "price": 22.0,
-    "image": "/favicon.ico",
-    "category": "primer",
-    "description": "Smooths pores and helps makeup last."
-  },
-  {
-    "id": "p3",
-    "name": "Velvet Blush Compact",
-    "price": 18.0,
-    "image": "/favicon.ico",
-    "category": "blush",
-    "description": "Soft, blendable blush for a natural flush."
-  }
+  {"id":"p1","name":"Cloud Nine Bath Soak","price":24,"image":"https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=900&q=80","category":"bath","scent":"Lavender + vanilla","description":"Mineral-rich bath salts with a soft lavender and vanilla scent for a slow evening reset.","featured":true},
+  {"id":"p2","name":"Rosewater Body Oil","price":28,"image":"https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=900&q=80","category":"body","scent":"Rose + sandalwood","description":"A lightweight finishing oil designed to leave skin glossy without a heavy feel.","featured":true},
+  {"id":"p3","name":"Sunday Morning Candle","price":32,"image":"https://images.unsplash.com/photo-1602874801006-e26f19f50d22?auto=format&fit=crop&w=900&q=80","category":"home","scent":"Cotton + white tea","description":"A clean, airy candle inspired by fresh linens, open windows, and an unhurried morning.","featured":true},
+  {"id":"p4","name":"Citrus Silk Body Butter","price":26,"image":"https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=80","category":"body","scent":"Bergamot + orange blossom","description":"Rich body butter with a whipped texture and bright citrus-floral finish."},
+  {"id":"p5","name":"Moon Milk Pillow Mist","price":19,"image":"https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80","category":"home","scent":"Chamomile + lavender","description":"A soft linen mist created for wind-down routines and quiet nighttime rituals."},
+  {"id":"p6","name":"Honey Oat Cleansing Bar","price":14,"image":"https://images.unsplash.com/photo-1607006344380-b6775a0824ce?auto=format&fit=crop&w=900&q=80","category":"bath","scent":"Oat + honey","description":"A gentle cleansing bar with a creamy lather and a warm, barely-sweet scent."},
+  {"id":"p7","name":"Quiet Garden Hand Cream","price":16,"image":"https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=80","category":"body","scent":"Jasmine + green tea","description":"Fast-absorbing hand cream with a fresh botanical scent and silky finish."},
+  {"id":"p8","name":"Velvet Woods Diffuser","price":38,"image":"https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80","category":"home","scent":"Cedar + amber","description":"A warm reed diffuser designed to add a calm, grounded scent to small spaces."}
 ]
