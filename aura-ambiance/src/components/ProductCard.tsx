@@ -1,25 +1,42 @@
-// src/components/ProductCard.tsx
-import React from 'react'
 import Link from 'next/link'
-
-type Product = { id: string; name: string; price: number; image?: string; description?: string }
+import type { Product } from '../types'
+import { useCartStore } from '../store/useCartStore'
 
 export default function ProductCard({ product }: { product: Product }) {
+  const add = useCartStore((state) => state.add)
+
   return (
-    <article className="bg-white rounded-lg shadow p-4 flex flex-col">
-      <img src={product.image ?? '/favicon.ico'} alt={product.name} className="w-full h-40 object-cover rounded mb-3" />
-      <h3 className="font-semibold">{product.name}</h3>
-      <p className="text-slate-600 text-sm mt-1">{product.description}</p>
-      <div className="mt-3 flex items-center justify-between">
-        <div className="text-pink-600 font-bold">${product.price.toFixed(2)}</div>
-        <div className="space-x-2">
+    <article className="overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img
+        src={product.image}
+        alt=""
+        className="h-56 w-full object-cover"
+        loading="lazy"
+      />
+      <div className="p-5">
+        <div className="mb-2 flex items-start justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-aura-500">{product.category}</p>
+            <h3 className="mt-1 text-lg font-semibold">{product.name}</h3>
+          </div>
+          <span className="font-semibold text-slate-900">{'$'}{product.price.toFixed(2)}</span>
+        </div>
+        <p className="text-sm text-slate-600">{product.description}</p>
+        <p className="mt-2 text-xs text-slate-500">Scent: {product.scent}</p>
+        <div className="mt-5 flex gap-2">
           <button
-            onClick={() => window.dispatchEvent(new CustomEvent('aura-cart-add', { detail: { count: 1 } }))}
-            className="px-3 py-1 rounded bg-pink-500 text-white text-sm"
+            type="button"
+            onClick={() => add(product)}
+            className="flex-1 rounded-full bg-aura-500 px-4 py-2 text-sm font-semibold text-white hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-aura-500 focus:ring-offset-2"
           >
-            Add
+            Add to cart
           </button>
-          <Link href={`/product/${product.id}`}><a className="text-sm text-slate-600 hover:underline">Details</a></Link>
+          <Link
+            href={'/product/' + product.id}
+            className="rounded-full border border-rose-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-rose-50"
+          >
+            Details
+          </Link>
         </div>
       </div>
     </article>
