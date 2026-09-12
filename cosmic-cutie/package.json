@@ -32,7 +32,7 @@
     "vitest": "^2.0.5"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": "24.x"
   },
   "overrides": {
     "postcss": "$postcss"
