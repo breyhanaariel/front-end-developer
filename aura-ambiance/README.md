@@ -40,6 +40,26 @@ Aura & Ambiance is a polished storefront prototype built to demonstrate a realis
 
 This project focuses on front-end work a retail or freelance client can immediately understand: product discovery, conversion-focused navigation, cart continuity, clear form states, and responsive presentation.
 
+## Quality & Performance
+
+- Responsive storefront layouts are presented across desktop and mobile breakpoints.
+- Checkout uses labeled form controls, validation feedback, and native interactive elements.
+- Product imagery includes descriptive alternative text for assistive technology.
+- Empty-cart and validation states are handled explicitly instead of leaving dead-end UI.
+- Production quality is checked with ESLint, TypeScript, Vitest, and a Next.js production build in GitHub Actions.
+- Lighthouse is run against the deployed Vercel application through a repeatable GitHub Actions workflow.
+
+### Lighthouse production baseline
+
+| Audit | Score |
+| --- | ---: |
+| Performance | **99 / 100** |
+| Accessibility | **92 / 100** |
+
+Measured **September 12, 2026** with Lighthouse in GitHub Actions against `https://aura-ambiance.vercel.app`. Lighthouse scores can vary slightly between runs and environments.
+
+[View the Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml)
+
 ## Run Locally
 
 From the showcase repository root:
