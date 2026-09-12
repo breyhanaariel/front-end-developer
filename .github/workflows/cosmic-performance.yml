@@ -1,0 +1,69 @@
+name: Cosmic Cutie Performance
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'cosmic-cutie/**'
+      - '.github/workflows/cosmic-performance.yml'
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cosmic-cutie
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build production app
+        run: npm run build
+
+      - name: Start production app
+        run: |
+          npm start -- -p 3000 > /tmp/cosmic-next.log 2>&1 &
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000 > /dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/cosmic-next.log
+          exit 1
+
+      - name: Install Lighthouse
+        run: npm install -g lighthouse
+
+      - name: Audit production build
+        run: |
+          lighthouse http://127.0.0.1:3000 \
+            --chrome-flags="--headless --no-sandbox" \
+            --only-categories=performance,accessibility \
+            --output=json \
+            --output-path=/tmp/cosmic-lighthouse.json \
+            --quiet
+
+      - name: Print performance evidence
+        run: |
+          node - <<'NODE'
+          const report = require('/tmp/cosmic-lighthouse.json')
+          const score = (key) => Math.round(report.categories[key].score * 100)
+          const metric = (key) => report.audits[key]?.displayValue || 'n/a'
+          console.log(`PERFORMANCE=${score('performance')}`)
+          console.log(`ACCESSIBILITY=${score('accessibility')}`)
+          console.log(`FCP=${metric('first-contentful-paint')}`)
+          console.log(`LCP=${metric('largest-contentful-paint')}`)
+          console.log(`TBT=${metric('total-blocking-time')}`)
+          console.log(`CLS=${metric('cumulative-layout-shift')}`)
+          console.log(`SPEED_INDEX=${metric('speed-index')}`)
+          NODE
