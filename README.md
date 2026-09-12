@@ -33,7 +33,9 @@ A self-care retail experience focused on the complete buyer journey: product dis
 
 **Stack:** Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest
 
-[Source](./aura-ambiance) · **Live demo:** deployment pending
+[🌐 Live Site](https://aura-ambiance.vercel.app) · [📁 Source](./aura-ambiance)
+
+![Aura & Ambiance live desktop preview](https://api.microlink.io?url=https%3A%2F%2Faura-ambiance.vercel.app&screenshot=true&meta=false&embed=screenshot.url)
 
 ---
 
@@ -45,7 +47,9 @@ An interactive astronomy dashboard backed by Open-Meteo. Users can search a loca
 
 **Stack:** Next.js · React · TypeScript · Redux Toolkit · Chart.js · Tailwind CSS · Vitest
 
-[Source](./cosmic-cutie) · **Live demo:** deployment pending
+[🌐 Live Site](https://cosmic-cutie.vercel.app) · [📁 Source](./cosmic-cutie)
+
+![Cosmic Cutie live desktop preview](https://api.microlink.io?url=https%3A%2F%2Fcosmic-cutie.vercel.app&screenshot=true&meta=false&embed=screenshot.url)
 
 ---
 
@@ -57,7 +61,9 @@ A beauty discovery interface that combines current Open-Meteo conditions with ru
 
 **Stack:** Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest
 
-[Source](./glamour-forecast) · **Live demo:** deployment pending
+[🌐 Live Site](https://glamour-forecast.vercel.app) · [📁 Source](./glamour-forecast)
+
+![Glamour Forecast live desktop preview](https://api.microlink.io?url=https%3A%2F%2Fglamour-forecast.vercel.app&screenshot=true&meta=false&embed=screenshot.url)
 
 ---
 
@@ -71,7 +77,7 @@ front-end-developer/
 └── .github/workflows/   # CI for all showcase applications
 ```
 
-Each application has its own `package.json`, README, test suite, and deployment configuration so it can be deployed independently from this showcase repository.
+Each application has its own `package.json`, README, test suite, and Vercel production deployment.
 
 ---
 
@@ -101,7 +107,7 @@ npm test
 npm run build
 ```
 
-GitHub Actions runs these checks for all three project roots on pushes to `main` and on pull requests.
+GitHub Actions runs production dependency auditing, linting, type checking, tests, and production builds for all three project roots.
 
 ---
 
