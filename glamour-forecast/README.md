@@ -50,6 +50,26 @@ A small recommendation module converts weather measurements into transparent, te
 
 **No API keys or secrets are required.**
 
+## Quality & Performance
+
+- Responsive layouts are presented across desktop and mobile breakpoints.
+- Weather and product flows include explicit loading, empty, and API-error states.
+- Search/filter controls use native interactive elements, and product images include descriptive alternative text.
+- Persisted favorites and location state are handled through a typed Zustand store rather than component-only state.
+- Production quality is checked with ESLint, TypeScript, Vitest, and a Next.js production build in GitHub Actions.
+- Lighthouse is run against the deployed Vercel application through a repeatable GitHub Actions workflow.
+
+### Lighthouse production baseline
+
+| Audit | Score |
+| --- | ---: |
+| Performance | **99 / 100** |
+| Accessibility | **92 / 100** |
+
+Measured **September 12, 2026** with Lighthouse in GitHub Actions against `https://glamour-forecast.vercel.app`. Lighthouse scores can vary slightly between runs and environments.
+
+[View the Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml)
+
 ## Run Locally
 
 From the showcase repository root:
