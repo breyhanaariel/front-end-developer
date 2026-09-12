@@ -1,17 +1,18 @@
-# 🎀 Brianna Dickenson
+# 🎀 Brianna Dickenson 🎀
 
-## Front-End Developer | React · Next.js · TypeScript
+## **Front-End Developer · React · Next.js · TypeScript**
 
 I build responsive, accessible front-end experiences with a focus on polished UI, clear state management, API-driven features, and maintainable component architecture.
 
-**Open to full-time remote front-end roles and short-term freelance projects.**
+🕓 **Seeking Full Time Remote Position**  
+💌 **Available For Freelance**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
 
 ---
 
-## Core Stack
+## 🧠 Core Stack
 
 **Languages & Web:** HTML5 · CSS3 · JavaScript · TypeScript  
 **Front End:** React · Next.js · Tailwind CSS  
@@ -21,7 +22,7 @@ I build responsive, accessible front-end experiences with a focus on polished UI
 
 ---
 
-## Showcase Projects
+## 🌷 Showcase Projects
 
 This repository is intentionally structured as a **single front-end showcase**. Each folder is an independent Next.js application and demonstrates a different type of front-end problem.
 
@@ -67,7 +68,7 @@ A beauty discovery interface that combines current Open-Meteo conditions with ru
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```text
 front-end-developer/
@@ -81,7 +82,7 @@ Each application has its own `package.json`, README, test suite, and Vercel prod
 
 ---
 
-## Running a Project Locally
+## 🛠 Running a Project Locally
 
 Clone the showcase once, then choose the application you want to run:
 
@@ -96,7 +97,7 @@ All three showcase apps run without API keys or private environment variables.
 
 ---
 
-## Quality Checks
+## ✅ Quality Checks
 
 Every showcase project exposes the same quality commands:
 
@@ -111,13 +112,23 @@ GitHub Actions runs production dependency auditing, linting, type checking, test
 
 ---
 
-## Availability
+## 🌸 Explore My Work
 
-I am currently interested in:
+My portfolio is intentionally separated by specialty so each discipline can tell a focused story while still showing how my design and development skills connect.
 
-- Full-time remote front-end development roles
-- Short-term freelance front-end projects
-- Responsive website and web-app implementation
-- E-commerce UI, dashboards, and API-driven interfaces
+- 🎀 [UI/UX Designer](https://github.com/breyhanaariel/ui-ux-designer) — product design, research, flows, design systems, prototyping, and developer handoff
+- 💻 **Front-End Developer** — React, Next.js, TypeScript, APIs, state management, testing, and accessible implementation
+- 🌐 [Web Designer](https://github.com/breyhanaariel/web-designer) — responsive websites and brand-led digital experiences for short-term client projects
+- 🎨 [Graphic Designer](https://github.com/breyhanaariel/graphic-designer) — brand identity, campaign design, marketing assets, print, and motion
+
+---
+
+## 💌 Work With Me
+
+### 🕓 Seeking Full Time Remote Position
+I am seeking a **full-time remote Front-End Developer position** where I can contribute responsive interfaces, component architecture, API-driven features, accessibility, testing, and polished design implementation.
+
+### 💌 Available For Freelance
+I am also available for **short-term front-end projects**, including Figma-to-code implementation, React/Next.js interfaces, responsive fixes, component development, accessibility remediation, and API-driven features.
 
 For work inquiries, use the email or LinkedIn links at the top of this README.
