@@ -4,6 +4,15 @@
 
 Aura & Ambiance is a polished storefront prototype built to demonstrate a realistic front-end retail journey without pretending to provide a production payment backend.
 
+[🌐 **Open Live Site**](https://aura-ambiance.vercel.app)
+
+## Live Preview
+
+<p>
+  <img src="https://api.microlink.io?url=https%3A%2F%2Faura-ambiance.vercel.app&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url" alt="Aura & Ambiance desktop storefront" width="700" />
+  <img src="https://api.microlink.io?url=https%3A%2F%2Faura-ambiance.vercel.app&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url&amp;device=iPhone%2011" alt="Aura & Ambiance mobile storefront" width="220" />
+</p>
+
 ## What It Does
 
 - Browse a curated self-care product catalog
@@ -52,16 +61,11 @@ npm test
 npm run build
 ```
 
-## Deploy to Vercel
+## Deployment
 
-This app is deployment-ready as an independent root inside the monorepo:
-
-1. Import `breyhanaariel/front-end-developer` into Vercel.
-2. Set **Root Directory** to `aura-ambiance`.
-3. Keep the detected framework as **Next.js**.
-4. Deploy. No environment variables are required.
-
-**Live demo:** deployment pending.
+**Production:** https://aura-ambiance.vercel.app  
+**Platform:** Vercel  
+**Environment variables:** none required
 
 ## Source
 
