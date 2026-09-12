@@ -44,6 +44,26 @@ The browser dispatches a typed Redux async thunk to the local `/api/astronomy` r
 
 **No API keys or secrets are required.**
 
+## Quality & Performance
+
+- Responsive dashboard layouts are presented across desktop and mobile breakpoints.
+- Search, range controls, loading feedback, and API-error states provide explicit interaction feedback.
+- Native form controls and readable text/table output complement the chart-based visualization.
+- Typed Redux state and API normalization keep asynchronous data handling predictable and maintainable.
+- Production quality is checked with ESLint, TypeScript, Vitest, and a Next.js production build in GitHub Actions.
+- Lighthouse is run against the deployed Vercel application through a repeatable GitHub Actions workflow.
+
+### Lighthouse production baseline
+
+| Audit | Score |
+| --- | ---: |
+| Performance | **77 / 100** |
+| Accessibility | **92 / 100** |
+
+Measured **September 12, 2026** with Lighthouse in GitHub Actions against `https://cosmic-cutie.vercel.app`. Lighthouse scores can vary slightly between runs and environments. The performance score is documented as a transparent production baseline rather than hidden behind a generic optimization claim.
+
+[View the Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml)
+
 ## Run Locally
 
 From the showcase repository root:
