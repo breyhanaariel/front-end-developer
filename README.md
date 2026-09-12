@@ -44,7 +44,7 @@ A self-care retail experience focused on the complete buyer journey: product dis
 
 An interactive astronomy dashboard backed by Open-Meteo. Users can search a location and explore moon phase, illumination, moonrise/moonset, and sunrise/sunset data over 7- or 14-day ranges.
 
-**Demonstrates:** asynchronous Redux state, external API integration, data transformation, Chart.js visualization, loading/error states, responsive dashboard design.
+**Demonstrates:** asynchronous Redux state, external API integration, data transformation, Chart.js visualization, loading/error states, responsive dashboard design, and measured performance optimization.
 
 **Stack:** Next.js · React · TypeScript · Redux Toolkit · Chart.js · Tailwind CSS · Vitest
 
@@ -70,19 +70,19 @@ A beauty discovery interface that combines current Open-Meteo conditions with ru
 
 ## ♿ Accessibility & Performance Evidence
 
-Accessibility and performance are documented with implementation evidence and repeatable production audits rather than listed only as skills.
+Accessibility and performance are documented with implementation evidence and repeatable audits rather than listed only as skills.
 
 | Project | Lighthouse Performance | Lighthouse Accessibility |
 | --- | ---: | ---: |
 | Aura & Ambiance | **99 / 100** | **92 / 100** |
-| Cosmic Cutie | **77 / 100** | **92 / 100** |
+| Cosmic Cutie optimized production build | **96 / 100** | **92 / 100** |
 | Glamour Forecast | **99 / 100** | **92 / 100** |
 
-Scores were measured **September 12, 2026** with Lighthouse running in GitHub Actions against the live Vercel deployments. Scores can vary slightly between runs and environments.
+Aura & Ambiance and Glamour Forecast were audited against their live Vercel deployments on **September 12, 2026**. Cosmic Cutie originally measured **77 / 100** performance on its deployed baseline; after code-splitting and deferring Chart.js until the visualization section approaches the viewport, the optimized production build measures **96 / 100** performance with **0.8 s FCP**, **1.8 s LCP**, **210 ms TBT**, and **0 CLS**.
 
-Each project README documents its responsive behavior, accessible interaction patterns, loading/empty/error handling where applicable, automated quality checks, and individual Lighthouse baseline.
+Each project README documents its responsive behavior, accessible interaction patterns, loading/empty/error handling where applicable, automated quality checks, and individual Lighthouse evidence.
 
-[View the repeatable Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml)
+[View the deployed-app Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml) · [View Cosmic Cutie performance validation](https://github.com/breyhanaariel/front-end-developer/actions/workflows/cosmic-performance.yml)
 
 ---
 
@@ -126,7 +126,7 @@ npm test
 npm run build
 ```
 
-GitHub Actions runs production dependency auditing, linting, type checking, tests, production builds, and repeatable Lighthouse audits against the deployed showcase applications.
+GitHub Actions runs production dependency auditing, linting, type checking, tests, production builds, and repeatable Lighthouse audits.
 
 ---
 
