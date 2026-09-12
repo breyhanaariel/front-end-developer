@@ -48,6 +48,4 @@ jobs:
 
       - name: Build
         working-directory: ${{ matrix.project }}
-        env:
-          WEATHERAPI_KEY: ci-placeholder
         run: npm run build
