@@ -85,7 +85,7 @@ export default function ChartWidget({ data }: { data: AstronomyPayload }) {
         <div className="cosmic-card">
           <div className="mb-4">
             <h2 className="text-xl font-semibold">Moon illumination trend</h2>
-            <p className="mt-1 text-sm text-slate-500">Daily illumination from WeatherAPI astronomy data.</p>
+            <p className="mt-1 text-sm text-slate-500">Daily illumination from Open-Meteo astronomy data.</p>
           </div>
           <div className="h-80">
             <Line
