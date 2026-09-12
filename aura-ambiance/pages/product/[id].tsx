@@ -38,7 +38,7 @@ export default function ProductPage() {
         {status === 'missing' && <p role="alert">That product could not be found.</p>}
         {product && (
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
-            <img src={product.image} alt="" className="h-[420px] w-full rounded-3xl object-cover shadow-lg" />
+            <img src={product.image} alt={product.name} className="h-[420px] w-full rounded-3xl object-cover shadow-lg" />
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-aura-500">{product.category}</p>
               <h1 className="mt-3 text-4xl font-semibold">{product.name}</h1>
