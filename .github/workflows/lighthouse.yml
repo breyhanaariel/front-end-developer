@@ -1,0 +1,46 @@
+name: Lighthouse Portfolio Audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lighthouse.yml'
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: aura-ambiance
+            url: https://aura-ambiance.vercel.app
+          - project: cosmic-cutie
+            url: https://cosmic-cutie.vercel.app
+          - project: glamour-forecast
+            url: https://glamour-forecast.vercel.app
+
+    steps:
+      - name: Install Lighthouse
+        run: npm install -g lighthouse
+
+      - name: Run Lighthouse
+        run: |
+          lighthouse "${{ matrix.url }}" \
+            --chrome-flags="--headless --no-sandbox" \
+            --only-categories=performance,accessibility \
+            --output=json \
+            --output-path=lighthouse.json \
+            --quiet
+
+      - name: Print scores
+        run: |
+          node - <<'NODE'
+          const report = require('./lighthouse.json');
+          const performance = Math.round(report.categories.performance.score * 100);
+          const accessibility = Math.round(report.categories.accessibility.score * 100);
+          console.log(`PROJECT=${{ matrix.project }}`);
+          console.log(`PERFORMANCE=${performance}`);
+          console.log(`ACCESSIBILITY=${accessibility}`);
+          NODE
