@@ -42,6 +42,8 @@ Open-Meteo supplies geocoding, sun times, moonrise/moonset, and moon phase data.
 
 The browser dispatches a typed Redux async thunk to the local `/api/astronomy` route. The Next.js API route geocodes the requested location, loads daily astronomy data from Open-Meteo, normalizes it, and returns only the fields needed by the dashboard.
 
+Chart.js is code-split from the initial page bundle. Summary cards and tabular astronomy data render independently, while the heavier interactive charts are dynamically imported only when their section approaches the viewport. Chart animation is disabled to reduce main-thread work during first interaction.
+
 **No API keys or secrets are required.**
 
 ## Quality & Performance
@@ -50,19 +52,22 @@ The browser dispatches a typed Redux async thunk to the local `/api/astronomy` r
 - Search, range controls, loading feedback, and API-error states provide explicit interaction feedback.
 - Native form controls and readable text/table output complement the chart-based visualization.
 - Typed Redux state and API normalization keep asynchronous data handling predictable and maintainable.
-- Production quality is checked with ESLint, TypeScript, Vitest, and a Next.js production build in GitHub Actions.
-- Lighthouse is run against the deployed Vercel application through a repeatable GitHub Actions workflow.
+- Chart.js is deferred with dynamic imports and IntersectionObserver so it does not block the initial experience.
+- Production quality is checked with ESLint, TypeScript, Vitest, dependency auditing, and a Next.js production build in GitHub Actions.
+- Lighthouse performance is validated against an optimized production build in a repeatable GitHub Actions workflow.
 
-### Lighthouse production baseline
+### Lighthouse performance optimization
 
-| Audit | Score |
-| --- | ---: |
-| Performance | **77 / 100** |
-| Accessibility | **92 / 100** |
+| Measurement | Performance | Accessibility |
+| --- | ---: | ---: |
+| Original deployed baseline | **77 / 100** | **92 / 100** |
+| Optimized production build | **96 / 100** | **92 / 100** |
 
-Measured **September 12, 2026** with Lighthouse in GitHub Actions against `https://cosmic-cutie.vercel.app`. Lighthouse scores can vary slightly between runs and environments. The performance score is documented as a transparent production baseline rather than hidden behind a generic optimization claim.
+The optimized production-build audit measured **0.8 s FCP**, **1.8 s LCP**, **210 ms Total Blocking Time**, **0 CLS**, and a **0.8 s Speed Index** on September 12, 2026.
 
-[View the Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml)
+The main optimization was moving Chart.js out of the initial JavaScript path and loading the interactive chart bundle only as users approach that section. Lighthouse scores can vary slightly between runs and environments.
+
+[View the production-build performance workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/cosmic-performance.yml)
 
 ## Run Locally
 
