@@ -9,7 +9,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <article className="overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
       <div className="relative bg-pink-50">
-        <img src={product.image} alt="" className="h-52 w-full object-contain p-4" loading="lazy" />
+        <img src={product.image} alt={product.name} className="h-52 w-full object-contain p-4" loading="lazy" />
         <button
           type="button"
           onClick={() => toggleFavorite(product.id)}
