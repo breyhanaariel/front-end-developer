@@ -7,7 +7,7 @@ Glamour Forecast is an API-driven front-end application that combines current lo
 ## What It Does
 
 - Search current weather by city or postal code
-- Load live temperature, humidity, UV, wind, and condition data from WeatherAPI
+- Load live temperature, humidity, UV, wind, and condition data from Open-Meteo
 - Generate beauty-prep suggestions from weather conditions
 - Load beauty and skin-care products from DummyJSON
 - Search products by name, brand, or tags
@@ -25,7 +25,7 @@ The app does **not** claim that product data is real-time retail inventory. Dumm
 - TypeScript
 - Zustand + persistence middleware
 - Tailwind CSS
-- WeatherAPI
+- Open-Meteo Weather + Geocoding APIs
 - DummyJSON Products API
 - Vitest
 - ESLint
@@ -34,10 +34,12 @@ The app does **not** claim that product data is real-time retail inventory. Dumm
 
 External requests are proxied through Next.js API routes:
 
-- `/api/weather` calls WeatherAPI using a server-side `WEATHERAPI_KEY`.
+- `/api/weather` geocodes the user's search with Open-Meteo and then loads current weather conditions.
 - `/api/products` combines DummyJSON's `beauty` and `skin-care` categories and normalizes the response for the UI.
 
 A small recommendation module converts weather measurements into transparent, testable beauty guidance rather than hiding the logic inside a component.
+
+**No API keys or secrets are required.**
 
 ## Run Locally
 
@@ -45,15 +47,8 @@ From the showcase repository root:
 
 ```bash
 cd glamour-forecast
-cp .env.example .env.local
 npm install
 npm run dev
-```
-
-Add your WeatherAPI key:
-
-```env
-WEATHERAPI_KEY=your_key_here
 ```
 
 Open `http://localhost:3000`.
@@ -69,17 +64,13 @@ npm run build
 
 ## Deploy to Vercel
 
-1. Import `breyhanaariel/front-end-developer` into Vercel.
-2. Set **Root Directory** to `glamour-forecast`.
-3. Keep the detected framework as **Next.js**.
-4. Add `WEATHERAPI_KEY` in Vercel Environment Variables.
-5. Deploy.
+This app can be deployed directly with `glamour-forecast` as the project root. No environment variables are required.
 
 **Live demo:** deployment pending.
 
 ## Data Sources
 
-- [WeatherAPI](https://www.weatherapi.com/docs/)
+- [Open-Meteo](https://open-meteo.com/)
 - [DummyJSON Products](https://dummyjson.com/docs/products)
 
 ## Source
