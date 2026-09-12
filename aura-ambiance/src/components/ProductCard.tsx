@@ -9,7 +9,7 @@ export default function ProductCard({ product }: { product: Product }) {
     <article className="overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
       <img
         src={product.image}
-        alt=""
+        alt={product.name}
         className="h-56 w-full object-cover"
         loading="lazy"
       />
