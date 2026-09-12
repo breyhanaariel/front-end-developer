@@ -4,6 +4,15 @@
 
 Cosmic Cutie is a responsive astronomy dashboard that turns real Open-Meteo astronomy data into an approachable, visual front-end experience.
 
+[🌐 **Open Live Site**](https://cosmic-cutie.vercel.app)
+
+## Live Preview
+
+<p>
+  <img src="https://api.microlink.io?url=https%3A%2F%2Fcosmic-cutie.vercel.app&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url" alt="Cosmic Cutie desktop dashboard" width="700" />
+  <img src="https://api.microlink.io?url=https%3A%2F%2Fcosmic-cutie.vercel.app&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url&amp;device=iPhone%2011" alt="Cosmic Cutie mobile dashboard" width="220" />
+</p>
+
 ## What It Does
 
 - Search astronomy data by city or postal code
@@ -56,11 +65,11 @@ npm test
 npm run build
 ```
 
-## Deploy to Vercel
+## Deployment
 
-This app can be deployed directly with `cosmic-cutie` as the project root. No environment variables are required.
-
-**Live demo:** deployment pending.
+**Production:** https://cosmic-cutie.vercel.app  
+**Platform:** Vercel  
+**Environment variables:** none required
 
 ## Data Source
 
