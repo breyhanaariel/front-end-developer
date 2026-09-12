@@ -4,6 +4,15 @@
 
 Glamour Forecast is an API-driven front-end application that combines current local weather with rule-based beauty guidance and an external beauty/skin-care product catalog.
 
+[🌐 **Open Live Site**](https://glamour-forecast.vercel.app)
+
+## Live Preview
+
+<p>
+  <img src="https://api.microlink.io?url=https%3A%2F%2Fglamour-forecast.vercel.app&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url" alt="Glamour Forecast desktop experience" width="700" />
+  <img src="https://api.microlink.io?url=https%3A%2F%2Fglamour-forecast.vercel.app&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url&amp;device=iPhone%2011" alt="Glamour Forecast mobile experience" width="220" />
+</p>
+
 ## What It Does
 
 - Search current weather by city or postal code
@@ -62,11 +71,11 @@ npm test
 npm run build
 ```
 
-## Deploy to Vercel
+## Deployment
 
-This app can be deployed directly with `glamour-forecast` as the project root. No environment variables are required.
-
-**Live demo:** deployment pending.
+**Production:** https://glamour-forecast.vercel.app  
+**Platform:** Vercel  
+**Environment variables:** none required
 
 ## Data Sources
 
