@@ -39,7 +39,7 @@ A self-care retail experience focused on the complete buyer journey: product dis
 
 ### 🪐 Cosmic Cutie — Lunar Data Dashboard
 
-An interactive astronomy dashboard backed by WeatherAPI. Users can search a location and explore real moon-phase, illumination, moonrise/moonset, and sunrise/sunset data over 7- or 14-day ranges.
+An interactive astronomy dashboard backed by Open-Meteo. Users can search a location and explore moon phase, illumination, moonrise/moonset, and sunrise/sunset data over 7- or 14-day ranges.
 
 **Demonstrates:** asynchronous Redux state, external API integration, data transformation, Chart.js visualization, loading/error states, responsive dashboard design.
 
@@ -51,7 +51,7 @@ An interactive astronomy dashboard backed by WeatherAPI. Users can search a loca
 
 ### 💄 Glamour Forecast — Weather-Powered Beauty Discovery
 
-A beauty discovery interface that combines current WeatherAPI conditions with rule-based beauty guidance and live beauty/skin-care product data from DummyJSON. Users can search and filter products and persist favorites locally.
+A beauty discovery interface that combines current Open-Meteo conditions with rule-based beauty guidance and live beauty/skin-care product data from DummyJSON. Users can search and filter products and persist favorites locally.
 
 **Demonstrates:** multi-API integration, server-side API proxying, Zustand persistence, personalization logic, filtering, error handling, responsive UI.
 
@@ -86,7 +86,7 @@ npm install
 npm run dev
 ```
 
-For **Cosmic Cutie** and **Glamour Forecast**, copy `.env.example` to `.env.local` and add a WeatherAPI key before starting the app.
+All three showcase apps run without API keys or private environment variables.
 
 ---
 
