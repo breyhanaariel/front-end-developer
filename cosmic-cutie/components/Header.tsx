@@ -7,7 +7,7 @@ export default function Header() {
         <Link href="/" className="text-xl font-bold text-pink-300">Cosmic Cutie</Link>
         <nav aria-label="Primary navigation" className="flex gap-4 text-sm text-indigo-100/80">
           <a className="hover:text-white" href="#dashboard">Dashboard</a>
-          <a className="hover:text-white" href="https://www.weatherapi.com/" target="_blank" rel="noreferrer">Data source</a>
+          <a className="hover:text-white" href="https://open-meteo.com/" target="_blank" rel="noreferrer">Data source</a>
         </nav>
       </div>
     </header>
