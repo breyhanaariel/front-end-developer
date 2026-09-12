@@ -2,7 +2,7 @@
 
 ## **Front-End Developer · React · Next.js · TypeScript**
 
-I build responsive, accessible front-end experiences with a focus on polished UI, clear state management, API-driven features, and maintainable component architecture.
+I build responsive, accessible front-end experiences with a focus on polished UI, clear state management, API-driven features, maintainable component architecture, and measurable production quality.
 
 🕓 **Seeking Full Time Remote Position**  
 💌 **Available For Freelance**
@@ -18,7 +18,7 @@ I build responsive, accessible front-end experiences with a focus on polished UI
 **Front End:** React · Next.js · Tailwind CSS  
 **State:** Redux Toolkit · Zustand  
 **Data & UI:** REST APIs · Chart.js · responsive design · accessibility · form validation  
-**Quality:** ESLint · TypeScript type checking · Vitest · GitHub Actions
+**Quality:** ESLint · TypeScript type checking · Vitest · Lighthouse · GitHub Actions
 
 ---
 
@@ -68,6 +68,24 @@ A beauty discovery interface that combines current Open-Meteo conditions with ru
 
 ---
 
+## ♿ Accessibility & Performance Evidence
+
+Accessibility and performance are documented with implementation evidence and repeatable production audits rather than listed only as skills.
+
+| Project | Lighthouse Performance | Lighthouse Accessibility |
+| --- | ---: | ---: |
+| Aura & Ambiance | **99 / 100** | **92 / 100** |
+| Cosmic Cutie | **77 / 100** | **92 / 100** |
+| Glamour Forecast | **99 / 100** | **92 / 100** |
+
+Scores were measured **September 12, 2026** with Lighthouse running in GitHub Actions against the live Vercel deployments. Scores can vary slightly between runs and environments.
+
+Each project README documents its responsive behavior, accessible interaction patterns, loading/empty/error handling where applicable, automated quality checks, and individual Lighthouse baseline.
+
+[View the repeatable Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml)
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -75,7 +93,7 @@ front-end-developer/
 ├── aura-ambiance/       # E-commerce / commercial UX case study
 ├── cosmic-cutie/        # Data visualization / Redux case study
 ├── glamour-forecast/    # API integration / personalization case study
-└── .github/workflows/   # CI for all showcase applications
+└── .github/workflows/   # CI + Lighthouse audits for all showcase applications
 ```
 
 Each application has its own `package.json`, README, test suite, and Vercel production deployment.
@@ -108,7 +126,7 @@ npm test
 npm run build
 ```
 
-GitHub Actions runs production dependency auditing, linting, type checking, tests, and production builds for all three project roots.
+GitHub Actions runs production dependency auditing, linting, type checking, tests, production builds, and repeatable Lighthouse audits against the deployed showcase applications.
 
 ---
 
@@ -117,7 +135,7 @@ GitHub Actions runs production dependency auditing, linting, type checking, test
 My portfolio is intentionally separated by specialty so each discipline can tell a focused story while still showing how my design and development skills connect.
 
 - 🎀 [UI/UX Designer](https://github.com/breyhanaariel/ui-ux-designer) — product design, research, flows, design systems, prototyping, and developer handoff
-- 💻 **Front-End Developer** — React, Next.js, TypeScript, APIs, state management, testing, and accessible implementation
+- 💻 **Front-End Developer** — React, Next.js, TypeScript, APIs, state management, testing, accessibility, and measured production performance
 - 🌐 [Web Designer](https://github.com/breyhanaariel/web-designer) — responsive websites and brand-led digital experiences for short-term client projects
 - 🎨 [Graphic Designer](https://github.com/breyhanaariel/graphic-designer) — brand identity, campaign design, marketing assets, print, and motion
 
@@ -126,9 +144,9 @@ My portfolio is intentionally separated by specialty so each discipline can tell
 ## 💌 Work With Me
 
 ### 🕓 Seeking Full Time Remote Position
-I am seeking a **full-time remote Front-End Developer position** where I can contribute responsive interfaces, component architecture, API-driven features, accessibility, testing, and polished design implementation.
+I am seeking a **full-time remote Front-End Developer position** where I can contribute responsive interfaces, component architecture, API-driven features, accessibility, testing, performance work, and polished design implementation.
 
 ### 💌 Available For Freelance
-I am also available for **short-term front-end projects**, including Figma-to-code implementation, React/Next.js interfaces, responsive fixes, component development, accessibility remediation, and API-driven features.
+I am also available for **short-term front-end projects**, including Figma-to-code implementation, React/Next.js interfaces, responsive fixes, component development, accessibility remediation, performance improvements, and API-driven features.
 
 For work inquiries, use the email or LinkedIn links at the top of this README.
