@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
     paths:
+      - 'aura-ambiance/**'
+      - 'cosmic-cutie/**'
+      - 'glamour-forecast/**'
       - '.github/workflows/lighthouse.yml'
   workflow_dispatch:
 
