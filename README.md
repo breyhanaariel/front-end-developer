@@ -2,9 +2,19 @@
 
 ## **Front-End Developer | React · Next.js · TypeScript**
 
-🕓 **Seeking Full Time Remote Position**  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b) | 💌 **Available For Freelance** [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
+I build responsive, accessible front-end experiences with polished UI, clear state management, API-driven features, testing, and measurable production quality.
 
-I build responsive, accessible front-end experiences with a focus on polished UI, clear state management, API-driven features, maintainable component architecture, and measurable production quality.
+![Front-End Developer Portfolio Cover](./site/assets/portfolio-cover.svg)
+
+---
+
+## 💌 Work With Me
+
+🕓 **Seeking Full Time Remote Position**  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b)
+
+💌 **Available For Freelance** [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
+
+🌐 **[View Live Portfolio](https://breyhanaariel.github.io/front-end-developer/)**
 
 ---
 
@@ -18,72 +28,53 @@ I build responsive, accessible front-end experiences with a focus on polished UI
 
 ---
 
-## 🌷 Explore My Work
+## 🌷 Featured Work
 
-### 🌿 Aura & Ambiance — E-Commerce Storefront
+<table>
+<tr>
+<td width="260" valign="top"><img src="./site/assets/aura-ambiance.png" alt="Aura and Ambiance storefront" width="250"></td>
+<td valign="top">
+<h3>🌿 Aura &amp; Ambiance — E-Commerce Storefront</h3>
+<p>A self-care retail experience focused on the complete buyer journey: product discovery, persistent cart state, quantity management, product details, and a validated simulated checkout.</p>
+<p><strong>Demonstrates:</strong> commercial UI/UX · Zustand persistence · search/filter/sort · form validation · responsive shopping flows</p>
+<p><strong>Stack:</strong> Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest</p>
+<p><strong>Lighthouse:</strong> 99 Performance · 92 Accessibility</p>
+<p><a href="https://aura-ambiance.vercel.app">🌐 Live Site</a> · <a href="./aura-ambiance">📁 Source</a></p>
+</td>
+</tr>
+</table>
 
-A self-care retail experience focused on the complete buyer journey: product discovery, persistent cart state, quantity management, product details, and a validated simulated checkout.
+<table>
+<tr>
+<td width="260" valign="top"><img src="./site/assets/cosmic-cutie.png" alt="Cosmic Cutie lunar dashboard" width="250"></td>
+<td valign="top">
+<h3>🪐 Cosmic Cutie — Lunar Data Dashboard</h3>
+<p>An interactive astronomy dashboard backed by Open-Meteo. Users can search a location and explore moon phase, illumination, moonrise/moonset, and sunrise/sunset data over 7- or 14-day ranges.</p>
+<p><strong>Demonstrates:</strong> asynchronous Redux state · external API integration · data transformation · Chart.js visualization · loading/error states · measured performance optimization</p>
+<p><strong>Stack:</strong> Next.js · React · TypeScript · Redux Toolkit · Chart.js · Tailwind CSS · Vitest</p>
+<p><strong>Lighthouse:</strong> 99 Performance · 92 Accessibility · improved from 77 Performance through code splitting and deferred Chart.js loading</p>
+<p><a href="https://cosmic-cutie.vercel.app">🌐 Live Site</a> · <a href="./cosmic-cutie">📁 Source</a></p>
+</td>
+</tr>
+</table>
 
-**Demonstrates:** 
-- Commercial UI/UX
-- Zustand Persistence
-- Search/Filter/Sort
-- Form Validation
-- Responsive Shopping Flows
-
-**Stack:** Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest
-
-[🌐 Live Site](https://aura-ambiance.vercel.app)  · [📁 Source](./aura-ambiance)
-
-![Aura & Ambiance live desktop preview](https://api.microlink.io?url=https%3A%2F%2Faura-ambiance.vercel.app&screenshot=true&meta=false&embed=screenshot.url)
-
----
-
-### 🪐 Cosmic Cutie — Lunar Data Dashboard
-
-An interactive astronomy dashboard backed by Open-Meteo. Users can search a location and explore moon phase, illumination, moonrise/moonset, and sunrise/sunset data over 7- or 14-day ranges.
-
-**Demonstrates:** 
-- Asynchronous Redux State
-- External API Integration
-- Data Transformation
-- Chart.js Visualization
-- Loading/Error States
-- Responsive Dashboard Design
-- Measured Performance Optimization
-
-**Stack:** Next.js · React · TypeScript · Redux Toolkit · Chart.js · Tailwind CSS · Vitest
-
-[🌐 Live Site](https://cosmic-cutie.vercel.app) · [📁 Source](./cosmic-cutie)
-
-![Cosmic Cutie live desktop preview](https://api.microlink.io?url=https%3A%2F%2Fcosmic-cutie.vercel.app&screenshot=true&meta=false&embed=screenshot.url)
-
----
-
-### 💄 Glamour Forecast — Weather-Powered Beauty Discovery
-
-A beauty discovery interface that combines current Open-Meteo conditions with rule-based beauty guidance and live beauty/skin-care product data from DummyJSON. Users can search and filter products and persist favorites locally.
-
-**Demonstrates:**
-- Multi-API Integration
-- Server-Side API Proxying
-- Zustand Persistence
-- Personalization Logic
-- Filtering
-- Error Handling
-- Responsive UI.
-
-**Stack:** Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest
-
-[🌐 Live Site](https://glamour-forecast.vercel.app) · [📁 Source](./glamour-forecast)
-
-![Glamour Forecast live desktop preview](https://api.microlink.io?url=https%3A%2F%2Fglamour-forecast.vercel.app&screenshot=true&meta=false&embed=screenshot.url)
+<table>
+<tr>
+<td width="260" valign="top"><img src="./site/assets/glamour-forecast.png" alt="Glamour Forecast beauty discovery interface" width="250"></td>
+<td valign="top">
+<h3>💄 Glamour Forecast — Weather-Powered Beauty Discovery</h3>
+<p>A beauty discovery interface combining current Open-Meteo conditions with rule-based beauty guidance and live beauty/skin-care product data from DummyJSON.</p>
+<p><strong>Demonstrates:</strong> multi-API integration · server-side API proxying · Zustand persistence · personalization logic · filtering · error handling · responsive UI</p>
+<p><strong>Stack:</strong> Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest</p>
+<p><strong>Lighthouse:</strong> 99 Performance · 92 Accessibility</p>
+<p><a href="https://glamour-forecast.vercel.app">🌐 Live Site</a> · <a href="./glamour-forecast">📁 Source</a></p>
+</td>
+</tr>
+</table>
 
 ---
 
 ## ♿ Accessibility & Performance Evidence
-
-Accessibility and performance are documented with implementation evidence and repeatable audits rather than listed only as skills.
 
 | Project | Lighthouse Performance | Lighthouse Accessibility |
 | --- | ---: | ---: |
@@ -91,11 +82,34 @@ Accessibility and performance are documented with implementation evidence and re
 | Cosmic Cutie | **99 / 100** | **92 / 100** |
 | Glamour Forecast | **99 / 100** | **92 / 100** |
 
-Scores were measured against the live Vercel deployments on **September 12, 2026** using Lighthouse in GitHub Actions. Cosmic Cutie originally measured **77 / 100** performance; after code-splitting Chart.js and deferring the visualization bundle until the chart section approaches the viewport, its live deployment now measures **99 / 100** performance. Lighthouse scores can vary slightly between runs and environments.
+Scores are measured against the live Vercel deployments using Lighthouse in GitHub Actions. Cosmic Cutie originally measured **77 / 100** performance; after code-splitting Chart.js and deferring the visualization bundle until the chart section approaches the viewport, its live deployment measures **99 / 100** performance. Lighthouse scores can vary slightly between runs and environments.
 
-Each project README documents its responsive behavior, accessible interaction patterns, loading/empty/error handling where applicable, automated quality checks, and individual Lighthouse evidence.
+[View deployed-app Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml) · [View Cosmic Cutie performance validation](https://github.com/breyhanaariel/front-end-developer/actions/workflows/cosmic-performance.yml)
 
-[View the deployed-app Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml) · [View Cosmic Cutie performance validation](https://github.com/breyhanaariel/front-end-developer/actions/workflows/cosmic-performance.yml)
+---
+
+## ✅ Code Quality
+
+Every showcase project exposes the same quality commands:
+
+```bash
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+GitHub Actions runs production dependency auditing, linting, type checking, tests, production builds, and repeatable Lighthouse audits.
+
+---
+
+## 🌈 Portfolio Range
+
+| Project | Product Type | Primary Proof |
+| --- | --- | --- |
+| 🌿 **Aura & Ambiance** | E-commerce | Commercial UI, state, forms, complete buyer flow |
+| 🪐 **Cosmic Cutie** | Data dashboard | Redux, APIs, visualization, measurable performance work |
+| 💄 **Glamour Forecast** | Personalized discovery | Multi-API integration, async UI, persistence, filtering |
 
 ---
 
@@ -114,15 +128,23 @@ All three showcase apps run without API keys or private environment variables.
 
 ---
 
-## ✅ Quality Checks
+## 🌸 Explore My Work
 
-Every showcase project exposes the same quality commands:
+My portfolio is intentionally separated by specialty so each discipline can tell a focused story while still showing how my design and development skills connect.
 
-```bash
-npm run lint
-npm run typecheck
-npm test
-npm run build
-```
+- 🎀 [UI/UX Designer](https://github.com/breyhanaariel/ui-ux-designer) — product design, research, flows, design systems, prototyping, and developer handoff
+- 💻 **Front-End Developer** — React, Next.js, TypeScript, APIs, state management, testing, accessibility, and measured performance
+- 🌐 [Web Designer](https://github.com/breyhanaariel/web-designer) — responsive websites and brand-led digital experiences for short-term client projects
+- 🎨 [Graphic Designer](https://github.com/breyhanaariel/graphic-designer) — brand identity, campaign design, marketing assets, print, and motion
 
-GitHub Actions runs production dependency auditing, linting, type checking, tests, production builds, and repeatable Lighthouse audits.
+---
+
+## 💌 Work With Me
+
+### 🕓 Seeking Full Time Remote Position
+I am seeking a **full-time remote Front-End Developer position** where I can contribute responsive interfaces, component architecture, API-driven features, accessibility, testing, performance work, and polished design implementation.
+
+### 💌 Available For Freelance
+I am also available for **short-term front-end projects**, including Figma-to-code implementation, React/Next.js interfaces, responsive fixes, component development, accessibility remediation, performance improvements, and API-driven features.
+
+[🌐 View Live Portfolio](https://breyhanaariel.github.io/front-end-developer/) · [GitHub](https://github.com/breyhanaariel/front-end-developer) · [LinkedIn](https://www.linkedin.com/in/brianna-dickenson-9555515b) · [Email Me](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
