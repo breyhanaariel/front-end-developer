@@ -75,13 +75,11 @@ I build responsive, accessible front-end experiences with polished UI, clear sta
 
 | Project | Lighthouse Performance | Lighthouse Accessibility |
 | --- | ---: | ---: |
-| Aura & Ambiance | **99 / 100** | **92 / 100** |
-| Cosmic Cutie | **99 / 100** | **92 / 100** |
-| Glamour Forecast | **99 / 100** | **92 / 100** |
+| [Aura & Ambiance](./aura-ambiance/README.md#lighthouse-production-baseline) | **99 / 100** | **92 / 100** |
+| [Cosmic Cutie](./cosmic-cutie/README.md#lighthouse-performance-optimization) | **99 / 100** | **92 / 100** |
+| [Glamour Forecast](./glamour-forecast/README.md#lighthouse-production-baseline) | **99 / 100** | **92 / 100** |
 
 Scores are measured against the live Vercel deployments using Lighthouse in GitHub Actions. Cosmic Cutie originally measured **77 / 100** performance; after code-splitting Chart.js and deferring the visualization bundle until the chart section approaches the viewport, its live deployment measures **99 / 100** performance. Lighthouse scores can vary slightly between runs and environments.
-
-[View deployed-app Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml) · [View Cosmic Cutie performance validation](https://github.com/breyhanaariel/front-end-developer/actions/workflows/cosmic-performance.yml)
 
 ---
 
@@ -133,15 +131,3 @@ My portfolio is intentionally separated by specialty so each discipline can tell
 - 💻 **Front-End Developer** — React, Next.js, TypeScript, APIs, state management, testing, accessibility, and measured performance
 - 🌐 [Web Designer](https://github.com/breyhanaariel/web-designer) — responsive websites and brand-led digital experiences for short-term client projects
 - 🎨 [Graphic Designer](https://github.com/breyhanaariel/graphic-designer) — brand identity, campaign design, marketing assets, print, and motion
-
----
-
-## 💌 Work With Me
-
-### 🕓 Seeking Full Time Remote Position
-I am seeking a **full-time remote Front-End Developer position** where I can contribute responsive interfaces, component architecture, API-driven features, accessibility, testing, performance work, and polished design implementation.
-
-### 💌 Available For Freelance
-I am also available for **short-term front-end projects**, including Figma-to-code implementation, React/Next.js interfaces, responsive fixes, component development, accessibility remediation, performance improvements, and API-driven features.
-
-[🌐 View Live Portfolio](https://front-end-developer-github-portfolio.vercel.app) · [GitHub](https://github.com/breyhanaariel/front-end-developer) · [LinkedIn](https://www.linkedin.com/in/brianna-dickenson-9555515b) · [Email Me](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
