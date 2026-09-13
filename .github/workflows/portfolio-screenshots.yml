@@ -1,0 +1,58 @@
+name: Capture portfolio screenshots
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/portfolio-screenshots.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Capture live project screenshots
+        run: |
+          mkdir -p site/assets
+          node <<'NODE'
+          const { chromium } = require('playwright');
+          const projects = [
+            ['aura-ambiance', 'https://aura-ambiance.vercel.app'],
+            ['cosmic-cutie', 'https://cosmic-cutie.vercel.app'],
+            ['glamour-forecast', 'https://glamour-forecast.vercel.app']
+          ];
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+            for (const [name, url] of projects) {
+              await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
+              await page.screenshot({ path: `site/assets/${name}.png`, fullPage: false });
+            }
+            await browser.close();
+          })();
+          NODE
+
+      - name: Commit screenshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/*.png
+          git diff --cached --quiet || git commit -m "Add static project screenshots"
+          git push
