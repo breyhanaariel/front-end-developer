@@ -14,7 +14,7 @@ I build responsive, accessible front-end experiences with polished UI, clear sta
 
 💌 **Available For Freelance** [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
 
-🌐 **[View Live Portfolio](https://breyhanaariel.github.io/front-end-developer/)**
+🌐 **[View Live Portfolio](https://front-end-developer-github-portfolio.vercel.app)**
 
 ---
 
@@ -147,4 +147,4 @@ I am seeking a **full-time remote Front-End Developer position** where I can con
 ### 💌 Available For Freelance
 I am also available for **short-term front-end projects**, including Figma-to-code implementation, React/Next.js interfaces, responsive fixes, component development, accessibility remediation, performance improvements, and API-driven features.
 
-[🌐 View Live Portfolio](https://breyhanaariel.github.io/front-end-developer/) · [GitHub](https://github.com/breyhanaariel/front-end-developer) · [LinkedIn](https://www.linkedin.com/in/brianna-dickenson-9555515b) · [Email Me](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
+[🌐 View Live Portfolio](https://front-end-developer-github-portfolio.vercel.app) · [GitHub](https://github.com/breyhanaariel/front-end-developer) · [LinkedIn](https://www.linkedin.com/in/brianna-dickenson-9555515b) · [Email Me](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
