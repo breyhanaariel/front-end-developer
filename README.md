@@ -2,23 +2,9 @@
 
 ## **Front-End Developer | React · Next.js · TypeScript**
 
+🕓 **Seeking Full Time Remote Position**  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b) | 💌 **Available For Freelance** [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
+
 I build responsive, accessible front-end experiences with a focus on polished UI, clear state management, API-driven features, maintainable component architecture, and measurable production quality.
-
-## 💌 Work With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
-
-### 🕓 Seeking Full Time Remote Position
-I am seeking a **full-time remote Front-End Developer position** where I can contribute responsive interfaces, component architecture, API-driven features, accessibility, testing, performance work, and polished design implementation.
-
-### 💌 Available For Freelance
-I am also available for **short-term front-end projects**, including Figma-to-code implementation, React/Next.js interfaces, responsive fixes, component development, accessibility remediation, performance improvements, and API-driven features.
-
-## 🌸 My Portfolios
-- 🎀 [UI/UX Designer](https://github.com/breyhanaariel/ui-ux-designer) — product design, research, flows, design systems, prototyping, and developer handoff
-- 💻 **Front-End Developer** — React, Next.js, TypeScript, APIs, state management, testing, accessibility, and measured production performance
-- 🌐 [Web Designer](https://github.com/breyhanaariel/web-designer) — responsive websites and brand-led digital experiences for short-term client projects
-- 🎨 [Graphic Designer](https://github.com/breyhanaariel/graphic-designer) — brand identity, campaign design, marketing assets, print, and motion
 
 ---
 
