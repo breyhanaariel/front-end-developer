@@ -54,20 +54,21 @@ Chart.js is code-split from the initial page bundle. Summary cards and tabular a
 - Typed Redux state and API normalization keep asynchronous data handling predictable and maintainable.
 - Chart.js is deferred with dynamic imports and IntersectionObserver so it does not block the initial experience.
 - Production quality is checked with ESLint, TypeScript, Vitest, dependency auditing, and a Next.js production build in GitHub Actions.
-- Lighthouse performance is validated against an optimized production build in a repeatable GitHub Actions workflow.
+- Lighthouse audits run against the live Vercel deployment through GitHub Actions.
 
 ### Lighthouse performance optimization
 
 | Measurement | Performance | Accessibility |
 | --- | ---: | ---: |
-| Original deployed baseline | **77 / 100** | **92 / 100** |
+| Original live baseline | **77 / 100** | **92 / 100** |
 | Optimized production build | **96 / 100** | **92 / 100** |
+| Optimized live Vercel deployment | **99 / 100** | **92 / 100** |
 
-The optimized production-build audit measured **0.8 s FCP**, **1.8 s LCP**, **210 ms Total Blocking Time**, **0 CLS**, and a **0.8 s Speed Index** on September 12, 2026.
+The optimization moved Chart.js out of the initial JavaScript path and loads the interactive chart bundle only as users approach that section. The optimized production-build validation measured **0.8 s FCP**, **1.8 s LCP**, **210 ms Total Blocking Time**, **0 CLS**, and a **0.8 s Speed Index**. The live Vercel deployment subsequently measured **99 / 100 performance** on September 12, 2026.
 
-The main optimization was moving Chart.js out of the initial JavaScript path and loading the interactive chart bundle only as users approach that section. Lighthouse scores can vary slightly between runs and environments.
+Lighthouse scores can vary slightly between runs and environments.
 
-[View the production-build performance workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/cosmic-performance.yml)
+[View the live-deployment Lighthouse workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/lighthouse.yml) · [View the production-build performance workflow](https://github.com/breyhanaariel/front-end-developer/actions/workflows/cosmic-performance.yml)
 
 ## Run Locally
 
