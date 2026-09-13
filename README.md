@@ -32,42 +32,39 @@ I build responsive, accessible front-end experiences with polished UI, clear sta
 
 <table>
 <tr>
-<td width="260" valign="top"><img src="./site/assets/aura-ambiance.png" alt="Aura and Ambiance storefront" width="250"></td>
+<td width="260" valign="top"><img src="./site/assets/aura-ambiance.png" alt="Aura and Ambiance storefront" width="250"><br><br><a href="https://aura-ambiance.vercel.app">🌐 Live Site</a> · <a href="./aura-ambiance">📁 Source</a></td>
 <td valign="top">
 <h3>🌿 Aura &amp; Ambiance — E-Commerce Storefront</h3>
 <p>A self-care retail experience focused on the complete buyer journey: product discovery, persistent cart state, quantity management, product details, and a validated simulated checkout.</p>
 <p><strong>Demonstrates:</strong> commercial UI/UX · Zustand persistence · search/filter/sort · form validation · responsive shopping flows</p>
 <p><strong>Stack:</strong> Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest</p>
 <p><strong>Lighthouse:</strong> 99 Performance · 92 Accessibility</p>
-<p><a href="https://aura-ambiance.vercel.app">🌐 Live Site</a> · <a href="./aura-ambiance">📁 Source</a></p>
 </td>
 </tr>
 </table>
 
 <table>
 <tr>
-<td width="260" valign="top"><img src="./site/assets/cosmic-cutie.png" alt="Cosmic Cutie lunar dashboard" width="250"></td>
+<td width="260" valign="top"><img src="./site/assets/cosmic-cutie.png" alt="Cosmic Cutie lunar dashboard" width="250"><br><br><a href="https://cosmic-cutie.vercel.app">🌐 Live Site</a> · <a href="./cosmic-cutie">📁 Source</a></td>
 <td valign="top">
 <h3>🪐 Cosmic Cutie — Lunar Data Dashboard</h3>
 <p>An interactive astronomy dashboard backed by Open-Meteo. Users can search a location and explore moon phase, illumination, moonrise/moonset, and sunrise/sunset data over 7- or 14-day ranges.</p>
 <p><strong>Demonstrates:</strong> asynchronous Redux state · external API integration · data transformation · Chart.js visualization · loading/error states · measured performance optimization</p>
 <p><strong>Stack:</strong> Next.js · React · TypeScript · Redux Toolkit · Chart.js · Tailwind CSS · Vitest</p>
 <p><strong>Lighthouse:</strong> 99 Performance · 92 Accessibility · improved from 77 Performance through code splitting and deferred Chart.js loading</p>
-<p><a href="https://cosmic-cutie.vercel.app">🌐 Live Site</a> · <a href="./cosmic-cutie">📁 Source</a></p>
 </td>
 </tr>
 </table>
 
 <table>
 <tr>
-<td width="260" valign="top"><img src="./site/assets/glamour-forecast.png" alt="Glamour Forecast beauty discovery interface" width="250"></td>
+<td width="260" valign="top"><img src="./site/assets/glamour-forecast.png" alt="Glamour Forecast beauty discovery interface" width="250"><br><br><a href="https://glamour-forecast.vercel.app">🌐 Live Site</a> · <a href="./glamour-forecast">📁 Source</a></td>
 <td valign="top">
 <h3>💄 Glamour Forecast — Weather-Powered Beauty Discovery</h3>
 <p>A beauty discovery interface combining current Open-Meteo conditions with rule-based beauty guidance and live beauty/skin-care product data from DummyJSON.</p>
 <p><strong>Demonstrates:</strong> multi-API integration · server-side API proxying · Zustand persistence · personalization logic · filtering · error handling · responsive UI</p>
 <p><strong>Stack:</strong> Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest</p>
 <p><strong>Lighthouse:</strong> 99 Performance · 92 Accessibility</p>
-<p><a href="https://glamour-forecast.vercel.app">🌐 Live Site</a> · <a href="./glamour-forecast">📁 Source</a></p>
 </td>
 </tr>
 </table>
