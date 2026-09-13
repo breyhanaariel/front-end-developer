@@ -1,6 +1,6 @@
 # 🎀 Brianna Dickenson 🎀
 
-## **Front-End Developer · React · Next.js · TypeScript**
+## **Front-End Developer | React · Next.js · TypeScript**
 
 I build responsive, accessible front-end experiences with a focus on polished UI, clear state management, API-driven features, maintainable component architecture, and measurable production quality.
 
@@ -22,20 +22,23 @@ I build responsive, accessible front-end experiences with a focus on polished UI
 
 ---
 
-## 🌷 Showcase Projects
-
-This repository is intentionally structured as a **single front-end showcase**. Each folder is an independent Next.js application and demonstrates a different type of front-end problem.
+## 🌷 Featured Work
 
 ### 🌿 Aura & Ambiance — E-Commerce Storefront
 
 A self-care retail experience focused on the complete buyer journey: product discovery, persistent cart state, quantity management, product details, and a validated simulated checkout.
 
-**Demonstrates:** commercial UI/UX, Zustand persistence, search/filter/sort, form validation, responsive shopping flows.
+**Demonstrates:** 
+- Commercial UI/UX
+- Zustand Persistence
+- Search/Filter/Sort
+- Form Validation
+- Responsive Shopping Flows
 
 **Stack:** Next.js · React · TypeScript · Zustand · Tailwind CSS · Vitest
 
-[🌐 Live Site](https://aura-ambiance.vercel.app) · [📁 Source](./aura-ambiance)
-
+[🌐 Live Site](https://aura-ambiance.vercel.app) 
+[📁 Source](./aura-ambiance)
 ![Aura & Ambiance live desktop preview](https://api.microlink.io?url=https%3A%2F%2Faura-ambiance.vercel.app&screenshot=true&meta=false&embed=screenshot.url)
 
 ---
