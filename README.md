@@ -75,10 +75,10 @@ Accessibility and performance are documented with implementation evidence and re
 | Project | Lighthouse Performance | Lighthouse Accessibility |
 | --- | ---: | ---: |
 | Aura & Ambiance | **99 / 100** | **92 / 100** |
-| Cosmic Cutie optimized production build | **96 / 100** | **92 / 100** |
+| Cosmic Cutie | **99 / 100** | **92 / 100** |
 | Glamour Forecast | **99 / 100** | **92 / 100** |
 
-Aura & Ambiance and Glamour Forecast were audited against their live Vercel deployments on **September 12, 2026**. Cosmic Cutie originally measured **77 / 100** performance on its deployed baseline; after code-splitting and deferring Chart.js until the visualization section approaches the viewport, the optimized production build measures **96 / 100** performance with **0.8 s FCP**, **1.8 s LCP**, **210 ms TBT**, and **0 CLS**.
+Scores were measured against the live Vercel deployments on **September 12, 2026** using Lighthouse in GitHub Actions. Cosmic Cutie originally measured **77 / 100** performance; after code-splitting Chart.js and deferring the visualization bundle until the chart section approaches the viewport, its live deployment now measures **99 / 100** performance. Lighthouse scores can vary slightly between runs and environments.
 
 Each project README documents its responsive behavior, accessible interaction patterns, loading/empty/error handling where applicable, automated quality checks, and individual Lighthouse evidence.
 
