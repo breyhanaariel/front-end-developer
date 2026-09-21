@@ -14,7 +14,9 @@ I build responsive, accessible front-end experiences with polished UI, clear sta
 
 💌 **Available For Freelance** [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
 
-🌐 **[View Live Portfolio](https://front-end-developer-github-portfolio.vercel.app)**
+🌐 **[View Portfolio Microsite](https://breyhanaariel.github.io/front-end-developer/)**
+
+🚀 **[View Live Vercel Portfolio](https://front-end-developer-github-portfolio.vercel.app)**
 
 ---
 
