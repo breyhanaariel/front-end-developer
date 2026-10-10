@@ -1,6 +1,6 @@
 # 🎀 Brianna Dickenson 🎀
 
-## **Front-End Developer | React · Next.js · TypeScript**
+## Front-End Developer · React Development · Web Applications
 
 I build responsive, accessible front-end experiences with polished UI, clear state management, API-driven features, testing, and measurable production quality.
 
@@ -8,19 +8,19 @@ I build responsive, accessible front-end experiences with polished UI, clear sta
 
 ---
 
-## 💌 Work With Me
+## 💌 Hire Me
 
-🕓 **Seeking Full Time Remote Position**  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brianna-dickenson-9555515b)
+🕓 **Seeking Full-Time Remote Position** · 💌 **Available for Freelance**
 
-💌 **Available For Freelance** [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:breyhanadickenson@gmail.com?subject=Interested%20in%20Working%20With%20You)
+🌐 **[View Live Portfolio](https://breyhanaariel.github.io/front-end-developer/)** · 💌 **[Hire Me / Project Inquiry](https://breyhanaariel.github.io/front-end-developer/#contact)**
 
-🌐 **[View Portfolio Microsite](https://breyhanaariel.github.io/front-end-developer/)**
+💼 [LinkedIn](https://www.linkedin.com/in/brianna-dickenson-9555515b) · [Email](mailto:breyhanadickenson@gmail.com?subject=Front-End%20Developer%20Inquiry)
 
-🚀 **[View Live Vercel Portfolio](https://front-end-developer-github-portfolio.vercel.app)**
+🚀 [View Live Vercel Portfolio](https://front-end-developer-github-portfolio.vercel.app)
 
 ---
 
-## 🧠 Core Stack
+## 🧠 Skills & Technologies
 
 **Languages & Web:** HTML5 · CSS3 · JavaScript · TypeScript  
 **Front End:** React · Next.js · Tailwind CSS  
@@ -76,7 +76,9 @@ I build responsive, accessible front-end experiences with polished UI, clear sta
 
 ---
 
-## ♿ Accessibility & Performance Evidence
+## ✅ Quality & Evidence
+
+### Accessibility & Performance Evidence
 
 | Project | Lighthouse Performance | Lighthouse Accessibility |
 | --- | ---: | ---: |
@@ -86,9 +88,7 @@ I build responsive, accessible front-end experiences with polished UI, clear sta
 
 Scores are measured against the live Vercel deployments using Lighthouse in GitHub Actions. Cosmic Cutie originally measured **77 / 100** performance; after code-splitting Chart.js and deferring the visualization bundle until the chart section approaches the viewport, its live deployment measures **99 / 100** performance. Lighthouse scores can vary slightly between runs and environments.
 
----
-
-## ✅ Code Quality
+### Code Quality
 
 Every showcase project exposes the same quality commands:
 
@@ -103,7 +103,18 @@ GitHub Actions runs production dependency auditing, linting, type checking, test
 
 ---
 
-## 🛠 Running a Project Locally
+## 🌈 How I Work
+
+1. **Understand** — clarify users, requirements, and accessibility needs.
+2. **Plan** — define architecture, components, state, and API contracts.
+3. **Build** — implement responsive interfaces and functional workflows.
+4. **Validate** — run linting, type checks, tests, and accessibility checks.
+5. **Optimize** — measure performance and improve loading and usability.
+6. **Deliver** — document setup, deployment, and maintenance considerations.
+
+---
+
+## 🛠 Repository & Documentation
 
 Clone the showcase once, then choose the application you want to run:
 
@@ -118,11 +129,13 @@ All three showcase apps run without API keys or private environment variables.
 
 ---
 
-## 🌸 Explore My Work
+## 🌸 Portfolio Family
 
-My portfolio is intentionally separated by specialty so each discipline can tell a focused story while still showing how my design and development skills connect.
+My portfolios are organized by specialty. Explore the live microsites below:
 
-- 🎀 [UI/UX Designer](https://breyhanaariel.github.io/ui-ux-designer/) — product design, research, flows, design systems, prototyping, and developer handoff
-- 💻 **Front-End Developer** — React, Next.js, TypeScript, APIs, state management, testing, accessibility, and measured performance
-- 🌐 [Web Designer](https://breyhanaariel.github.io/web-designer/) — responsive websites and brand-led digital experiences for short-term client projects
-- 🎨 [Graphic Designer](https://breyhanaariel.github.io/graphic-designer/) — brand identity, campaign design, marketing assets, print, and motion
+- 💻 **Front-End Developer (current portfolio)**
+- 🎀 [UI/UX Designer](https://breyhanaariel.github.io/ui-ux-designer/)
+- 🌐 [Web Designer](https://breyhanaariel.github.io/web-designer/)
+- 🎨 [Graphic Designer](https://breyhanaariel.github.io/graphic-designer/)
+- 📱 [Mobile Application Developer](https://breyhanaariel.github.io/mobile-app-developer/)
+- 🤖 [AI Automation Specialist](https://breyhanaariel.github.io/ai-automation-specialist/)
