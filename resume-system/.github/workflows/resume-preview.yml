@@ -1,0 +1,29 @@
+name: Resume PDF Preview
+on:
+  workflow_dispatch:
+  pull_request:
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt pypdf
+      - run: python scripts/build.py
+      - run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          pdfs=list(Path('output').glob('*.pdf'))
+          assert len(pdfs)==6
+          for pdf in pdfs:
+              reader=PdfReader(pdf)
+              assert len(reader.pages)==1
+              assert len(reader.pages[0].extract_text())>200
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume-previews
+          path: output/*.pdf
