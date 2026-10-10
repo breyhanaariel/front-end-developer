@@ -1,23 +1,29 @@
-# Resume system — staging review
+# Portfolio resumes — review-only GitHub staging
 
-This is a **review-only staging branch**, not a deployed resume system. No changes have been made to the default branch or any live portfolio site.
+This branch is a **staging anchor**, not the central `portfolio-resumes` repository. The six live websites and all default branches remain unchanged.
 
-Approved:
+## Approved inputs
 - Public name: Brianna Dickenson
-- Location: Clearwater, Florida; no phone number
-- Employment: Full Stack Developer Intern, Ad Caffeine Marketing, April 2021–Present (internship)
-- Kenzie Academy and W3C: completed credentials; existing Canva wording provisional
-- University of Michigan: individual completed courses
-- Skills: use only technologies evidenced in project code/documentation or confirmed employment duties
-- Publication scope: staging only
+- Location: Clearwater, Florida; omit phone
+- Employer: Ad Caffeine Marketing, Full Stack Developer Intern, April 2021–Present; internship
+- Responsibilities: WordPress development; debugging/testing; accessibility/SEO; UI/UX; branding/graphic design
+- Kenzie Academy and W3C credentials completed; exact wording provisional
+- University of Michigan: completed individual courses
+- Skills: only claims supported by project evidence or confirmed work
+- Publication scope: staging; **no public deployment approval**
 
-The full local generator, six one-page PDF previews, structured data, and workflow templates are in the Milestone 3 package supplied in ChatGPT. The central `breyhanaariel/portfolio-resumes` repository does not exist, so this staging branch is a temporary review anchor, **not** a working GitHub Actions build.
+## Files in this branch
+- `data/profile.json`, `data/education.json`, `data/approval.json` hold review metadata.
+- `.github/workflows/resume-preview.yml` is a **workflow template only**. Because it is nested under `resume-system/`, it is not an active GitHub Actions workflow.
+- `review-status.json` is the original staging record; `data/approval.json` is the newer approval state.
 
-Do not add resume download links, merge, or publish PDFs without explicit separate approval.
+The complete generator, six specialty configurations, PDFs and publishing scripts remain in the downloadable Milestone 3 local package, **not** this GitHub branch. The dedicated `breyhanaariel/portfolio-resumes` repository has not been created. A functioning GitHub preview or publishing automation has therefore **not** been activated.
 
-## Review gates
-1. Review actual PDF content and provisional credential wording.
-2. Review skill statements against code and employment evidence.
-3. Create central repository and import package with workflows.
-4. Configure protected environment and scoped publishing credentials.
-5. Obtain explicit public-deployment approval.
+## Next steps
+1. Create the dedicated `portfolio-resumes` repository.
+2. Import the complete package into it, placing workflows at repository-root `.github/workflows/`.
+3. Verify PDF output and review exact credential titles.
+4. Configure required-reviewer environment and scoped secrets.
+5. Request explicit separate approval before any PDF publication or site CTA changes.
+
+**Do not merge staging into main or modify the six sites without approval.**
