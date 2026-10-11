@@ -1,0 +1,54 @@
+name: Build portfolio resume PDF
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.resume-build/**'
+      - '.github/workflows/build-resume.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'reportlab>=4.2,<5' pypdf
+      - name: Generate specialty PDF
+        run: python .resume-build/scripts/build.py
+      - name: Publish generated PDF into website assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          import shutil
+          slug='front-end-developer'
+          pdf=Path('.resume-build/output')/(slug+'.pdf')
+          assert pdf.is_file(), f'Missing {pdf}'
+          reader=PdfReader(str(pdf))
+          assert len(reader.pages)==1, f'Expected one page: {pdf}'
+          text=reader.pages[0].extract_text()
+          assert 'RESUME PREVIEW' not in text and len(text)>200
+          dest=Path('site/assets/resume.pdf')
+          dest.parent.mkdir(parents=True,exist_ok=True)
+          shutil.copy2(pdf,dest)
+          if Path('docs/index.html').exists():
+              docs=Path('docs/assets/resume.pdf')
+              docs.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copy2(pdf,docs)
+          PY
+      - name: Commit generated resume
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/resume.pdf
+          if test -f docs/assets/resume.pdf; then git add docs/assets/resume.pdf; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: publish updated resume PDF"
+            git push
+          fi
