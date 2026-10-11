@@ -1,0 +1,31 @@
+[
+  {
+    "institution": "Kenzie Academy",
+    "description": "Full Stack Developer Certificate",
+    "status": "credential completed",
+    "official_title_unverified": true
+  },
+  {
+    "institution": "University of Michigan",
+    "description": "Web development courses (HTML5, CSS3, JavaScript, responsive design)",
+    "status": "individual courses completed"
+  },
+  {
+    "institution": "W3C",
+    "description": "HTML5 and CSS3 Fundamentals",
+    "status": "credential completed",
+    "official_title_unverified": true
+  },
+  {
+    "institution": "Broward College",
+    "description": "Pre-Nursing coursework",
+    "status": "coursework only",
+    "include": false
+  },
+  {
+    "institution": "South Broward High School",
+    "description": "High School Diploma",
+    "status": "completed",
+    "include": false
+  }
+]
