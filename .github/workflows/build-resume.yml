@@ -34,20 +34,24 @@ jobs:
           assert len(reader.pages)==1, f'Expected one page: {pdf}'
           text=reader.pages[0].extract_text()
           assert 'RESUME PREVIEW' not in text and len(text)>200
-          dest=Path('site/assets/resume.pdf')
+          dest=Path('site/assets/Brianna-Dickenson-Front-End-Developer-Resume.pdf')
           dest.parent.mkdir(parents=True,exist_ok=True)
           shutil.copy2(pdf,dest)
+          old=Path('site/assets/resume.pdf')
+          if old.exists(): old.unlink()
           if Path('docs/index.html').exists():
-              docs=Path('docs/assets/resume.pdf')
+              docs=Path('docs/assets/Brianna-Dickenson-Front-End-Developer-Resume.pdf')
               docs.parent.mkdir(parents=True,exist_ok=True)
               shutil.copy2(pdf,docs)
+              old_docs=Path('docs/assets/resume.pdf')
+              if old_docs.exists(): old_docs.unlink()
           PY
       - name: Commit generated resume
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/assets/resume.pdf
-          if test -f docs/assets/resume.pdf; then git add docs/assets/resume.pdf; fi
+          git add -A site/assets
+          if test -f docs/assets/Brianna-Dickenson-Front-End-Developer-Resume.pdf; then git add -A docs/assets; fi
           if ! git diff --cached --quiet; then
             git commit -m "docs: publish updated resume PDF"
             git push
