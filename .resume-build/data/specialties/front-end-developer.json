@@ -1,0 +1,21 @@
+{
+  "title": "Front-End Developer",
+  "accent": "#487C91",
+  "summary": "Front-end developer building responsive, accessible web applications with React, Next.js, and TypeScript. Project work spans e-commerce, API integration, state management, testing, and performance optimization.",
+  "skills": "React · Next.js · TypeScript · JavaScript · HTML5 · CSS3 · Tailwind CSS · Zustand · Redux Toolkit · REST APIs · Vitest",
+  "experience": [
+    "Developed and customized responsive WordPress themes for business websites.",
+    "Diagnosed theme and plugin issues and supported cross-browser testing.",
+    "Contributed to accessibility, SEO implementation, and website quality assurance."
+  ],
+  "projects": [
+    {
+      "name": "Aura & Ambiance — E-Commerce Storefront",
+      "details": "Built a Next.js storefront with product search, persistent cart state, and validated simulated checkout. Documented Lighthouse scores: 99 Performance / 92 Accessibility."
+    },
+    {
+      "name": "Cosmic Cutie — Lunar Data Dashboard",
+      "details": "Integrated astronomy APIs with Redux Toolkit and Chart.js; documented Lighthouse Performance improvement from 77 to 99 after deferred loading."
+    }
+  ]
+}
